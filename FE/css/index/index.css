@@ -11,35 +11,41 @@ body {
   background-color: #817676;
   margin: 0;
   padding: 0;
+  height: fit-content;
 }
 
 /* Navigation */
-nav {
-  position: sticky;
+.nav-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
   top: 0;
-  background-color: rgba(61, 56, 56, 0.9);
-  z-index: 1000;
+  width: 100%;
+  background-color: rgba(71, 66, 66, 0.5); /* Ganti sesuai kebutuhan */
+  z-index: 1000; /* Pastikan z-index nya lebih tinggi dari elemen lain jika diperlukan */
+  padding: 10px 20px; /* Sesuaikan dengan kebutuhan */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Efek bayangan untuk memberi kesan mengambang */
+  backdrop-filter: blur(10px);
 }
 
-nav ul {
-  list-style-type: none;
-  text-align: center;
+.nav-header img {
+  max-width: 100px; /* Sesuaikan dengan ukuran logo Anda */
 }
 
-nav ul li {
-  display: inline-block;
-  margin: 10px;
+#menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-nav ul li a {
-  text-decoration: none;
-  color: #333;
-  padding: 10px 20px;
-  transition: all 0.3s ease;
+#menu li {
+  margin-right: 20px; /* Sesuaikan dengan kebutuhan */
 }
 
-nav ul li a:hover {
-  color: #ff4500;
+#menu li:last-child {
+  margin-right: 0; /* Menghapus margin-right pada elemen terakhir */
 }
 
 /* Sections */
@@ -97,7 +103,7 @@ section {
   font-weight: 600;
   position: relative;
   overflow: hidden;
-  border: 2px solid #f66335;
+  border: 2px solid #e6a630;
   cursor: pointer;
   color: #fff;
   border-radius: 25px;
@@ -136,7 +142,7 @@ p.anim {
   }
 }
 .content button span {
-  background: #f66335;
+  background: #e6a630;
   height: 100%;
   width: 0;
   border-radius: 25px;
@@ -193,91 +199,6 @@ h1 {
 }
 
 /* Footer */
-/* img {
-  max-width: 100%;
-  height: auto;
-}
-section {
-  padding: 60px 0;
-  /* min-height: 100vh;*/
-/* } */
-/* ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-} */
-*/ .contact-area {
-  border-bottom: 1px solid #353c46;
-}
-
-.contact-content p {
-  font-size: 15px;
-  margin: 30px 0 60px;
-  position: relative;
-}
-
-.contact-content p::after {
-  background: #353c46;
-  bottom: -30px;
-  content: "";
-  height: 1px;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%);
-  width: 80%;
-}
-
-.contact-content h6 {
-  color: #8b9199;
-  font-size: 15px;
-  font-weight: 400;
-  margin-bottom: 10px;
-}
-
-.contact-content span {
-  color: #353c47;
-  margin: 0 10px;
-}
-
-.contact-social {
-  margin-top: 30px;
-}
-
-.contact-social > ul {
-  display: inline-flex;
-}
-
-.contact-social ul li a {
-  border: 1px solid #8b9199;
-  color: #8b9199;
-  display: inline-block;
-  height: 40px;
-  margin: 0 10px;
-  padding-top: 7px;
-  transition: all 0.4s ease 0s;
-  width: 40px;
-}
-
-.contact-social ul li a:hover {
-  border: 1px solid #fab702;
-  color: #fab702;
-}
-
-.contact-content img {
-  max-width: 210px;
-}
-
-section,
-footer {
-  background: #1a1e25;
-  color: #868c96;
-}
-
-footer p {
-  padding: 40px 0;
-  text-align: center;
-}
-
-footer img {
-  width: 44px;
+#footer {
+  background-color: rgb(78, 16, 16);
 }
