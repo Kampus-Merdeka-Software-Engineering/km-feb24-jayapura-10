@@ -8,10 +8,10 @@
 body {
   font-family: Arial, sans-serif;
   scroll-behavior: smooth;
-  background-color: #817676;
+  background-color: rgba(255, 255, 255, 0.5);
   margin: 0;
   padding: 0;
-  height: fit-content;
+  /* height: fit-content; */
 }
 
 /* Navigation */
@@ -24,7 +24,7 @@ body {
   width: 100%;
   background-color: rgba(156, 148, 148, 0.5); /* Ganti sesuai kebutuhan */
   z-index: 1000; /* Pastikan z-index nya lebih tinggi dari elemen lain jika diperlukan */
-  padding: 10px 20px; /* Sesuaikan dengan kebutuhan */
+  padding: 10px 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Efek bayangan untuk memberi kesan mengambang */
   backdrop-filter: blur(10px);
 }
@@ -70,7 +70,7 @@ nav li a:hover {
   -webkit-transition: all 1s ease;
 }
 
-/* Animated Bottom Line */
+/* Animasi garis loh beb */
 nav li a:before,
 nav li a:after {
   content: "";
@@ -89,7 +89,7 @@ nav li a:before {
 nav li a:after {
   background: #e6a630;
   right: 0;
-  /* transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1); */
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 nav li a:hover:before {
@@ -217,18 +217,25 @@ p.anim {
 }
 /* About Section */
 #about {
-  background-color: #ffcc66;
+  height: 600px;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 /* Dashboard Section */
 #dashboard {
   background-color: #99ff99;
+  background-image: url(../../../asset/images/blur.svg);
 }
 
 /* Team Section */
 #team {
   background-color: #ff99cc;
 }
+
+/* Feedback section */
 
 /* Parallax Effect */
 section[data-parallax] {
