@@ -6,14 +6,18 @@
     <title>Single Page Website</title>
     <link rel="stylesheet" href="../css/index/index.css" />
     <link rel="stylesheet" href="../css/index/nav.css" />
+    <!-- untuk menambah icon sosmed-->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   </head>
   <body>
     <!-- Navigasi -->
     <nav>
       <div class="nav-main">
         <div class="nav-header">
-          <img src="../../asset/images/NYC-Logo.png" alt="logo" />
-          <i class="fa fa-bars" aria-hidden="true"></i>
+          <a href="#home">
+            <img src="../../asset/images/NYC-Logo.png" alt="logo" />
+            <i class="fa fa-bars" aria-hidden="true"></i
+          ></a>
         </div>
         <ul id="menu">
           <li><a href="#home" class="#">Home</a></li>
@@ -42,28 +46,93 @@
     </section>
 
     <!-- Dashboard Section-->
-    <section id="dashboard" data-parallax>
+    <section id="dashboard">
       <h1>Dashboard Section</h1>
     </section>
 
     <!--  About Section-->
-    <section id="about" data-parallax>
+    <section id="about">
       <h1>About Section</h1>
     </section>
 
     <!-- Team Des Section-->
-    <section id="team" data-parallax>
+    <section id="team">
       <h1>Team Section</h1>
     </section>
 
     <!--Feedback Section -->
-    <section id="feedback" data-parallax>
-      <h1>Team Section</h1>
+    <section id="feedback">
+      <h1>Feedback Section</h1>
     </section>
 
     <!-- Footer Section-->
-    <section id="footer" data-parallax>
-      <h1>ini bagian footer</h1>
+    <section id="footer">
+      <footer>
+        <div class="row">
+          <div class="col" id="branch">
+            <img src="../../asset/images/revou.png" class="footer_logo" />
+            <img src="../../asset/images/KM.png" class="footer_logo" />
+          </div>
+          <div class="col" id="desc">
+            <h3>
+              Lokasi
+              <div class="bottom_line"><span></span></div>
+            </h3>
+            <p>123 Empat Lima Enam</p>
+            <p>Jakarta, POS 000, Indonesia</p>
+            <p class="footer_email">team10.jayapura24@gmail.com</p>
+          </div>
+          <div class="col" id="desc">
+            <h3>
+              Links
+              <div class="bottom_line"><span></span></div>
+            </h3>
+            <ul>
+              <li><a href="#home">HOME</a></li>
+              <li><a href="#dashboard">DASHBOARD</a></li>
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#team">TEAM DESC</a></li>
+              <li><a href="#feedback">FEEDBACK</a></li>
+            </ul>
+          </div>
+          <div class="col" id="desc">
+            <h3>
+              Berita
+              <div class="bottom_line"><span></span></div>
+            </h3>
+            <form>
+              <ion-icon class="icon" name="mail"></ion-icon>
+              <input
+                type="email"
+                placeholder="Masukin dong emailnya"
+                required
+              />
+              <button type="submit">
+                <ion-icon
+                  class="icon_right"
+                  name="arrow-round-forward"
+                ></ion-icon>
+              </button>
+            </form>
+            <div class="social_icons">
+              <a href="#">
+                <ion-icon class="social_icon" name="logo-github"></ion-icon>
+              </a>
+              <a href="#">
+                <ion-icon class="social_icon" name="logo-whatsapp"></ion-icon>
+              </a>
+              <a href="#">
+                <ion-icon class="social_icon" name="logo-instagram"></ion-icon>
+              </a>
+              <a href="#">
+                <ion-icon class="social_icon" name="mail"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">Team 10 Ⓒ 2024 - All Rights Reserved</p>
+      </footer>
     </section>
     <script src="../js/index.js"></script>
   </body>

@@ -1,4 +1,4 @@
-// JavaScript
+// JavaScript untuk scrolling menu mulus by id
 document.addEventListener("DOMContentLoaded", function() {
     const navLinks = document.querySelectorAll("#menu li a");
   
@@ -17,38 +17,19 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     });
   });
-  
 
 
-// Toggle Menu Icon ========================================
-// let toggleIcon = document.querySelector('.menuIcon');
+  /*  hampir sama dengan yang diatas, hanya saja ini utnuk yang footernya*/
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+  
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
 
-// toggleIcon.addEventListener('click', () => {
-//     if (toggleIcon.className != 'menuIcon toggle') {
-//         toggleIcon.className += ' toggle';
-//     } else {
-//         toggleIcon.className = 'menuIcon';
-//     }
-// });
 
-// /*  batas */
-// document.addEventListener("DOMContentLoaded", function() {
-//     const navLinks = document.querySelectorAll('.link');
-  
-//     navLinks.forEach(link => {
-//       link.addEventListener('click', scrollToSection);
-//     });
-  
-//     function scrollToSection(event) {
-//       event.preventDefault();
-//       const targetId = this.getAttribute('href').substring(1);
-//       const targetSection = document.getElementById(targetId);
-//       const distanceToTop = targetSection.offsetTop;
-  
-//       window.scrollTo({
-//         top: distanceToTop,
-//         behavior: 'smooth'
-//       });
-//     }
-//   });
+ 
   
