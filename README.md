@@ -30,6 +30,7 @@ An open-source of capstone project of team 10 jayapura 24. <br/>
 |      Septi Sekar Arum      | _Deployment_  |   edengumi   |
 |       Fajar Maulana        | _Deployment_  | fajarmlnaaa  |
 |       Lilis Surwangi       | _Pitch Deck_  |   kiyolisa   |
+|     Rr. Putri Nadia N      | _Pitch Deck_  |  nadiapn11   |
 |       Dziahul Fadhil       | _Pitch Deck_  |  Dziaulhaj   |
 |    Ririn Yuliani Putri     | _Pitch Deck_  |   ririnyu    |
 |     Dyah Ayu Pitaloka      | _Pitch Deck_  |   dyahapp    |
