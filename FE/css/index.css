@@ -9,7 +9,7 @@ body {
   font-family: Arial, sans-serif;
   scroll-behavior: smooth;
   background-color: rgba(255, 255, 255, 0.5);
-  margin: 0;
+  margin-bottom: 3px;
   padding: 0;
   height: fit-content;
 }
@@ -106,7 +106,7 @@ nav li a:hover:after {
 
 /* Sections */
 section {
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
