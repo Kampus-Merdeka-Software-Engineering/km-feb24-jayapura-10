@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
-
   /*  hampir sama dengan yang diatas, hanya saja ini utnuk yang footernya*/
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
