@@ -1,7 +1,10 @@
+/* Team Section    #513d19*/
+
 #team {
   width: 100%;
   height: 100vh;
-  background-color: #513d19;
+  background-color: #c9c8c6;
+
   border: #080f0f56 solid 2px;
   text-align: unset;
 }
@@ -17,7 +20,7 @@
   width: 170px;
   height: 250px;
   position: absolute;
-  transform: translate( 87%, 90%);
+  transform: translate(87%, 90%);
   border-radius: 20px;
   box-shadow: 0 20px 30px #e6a6305c;
   background-position: 50% 50%;
@@ -127,7 +130,7 @@
   cursor: pointer;
   margin: 0 5px;
   border: 2px solid #e6a630;
-  color:#ababab;
+  color: #ababab;
   transition: 0.3s;
   background: transparent;
 }
