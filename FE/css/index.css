@@ -11,7 +11,7 @@ body {
   background-color: rgba(255, 255, 255, 0.5);
   margin: 0;
   padding: 0;
-  /* height: fit-content; */
+  height: fit-content;
 }
 
 /* Navigation */
@@ -273,7 +273,9 @@ footer {
   width: 100%;
   background: linear-gradient(to right, #00093c, #2d0b00);
   color: #fff;
-  padding: 50px 0 30px;
+  /* padding: 50px 0 30px; */
+  padding: 1rem;
+  margin-bottom: 3px;
   font-size: 13px;
   line-height: 30px;
 }
