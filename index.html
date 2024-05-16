@@ -308,9 +308,44 @@
 
     <!--Feedback Section -->
     <section id="feedback">
-      <h1>Feedback Section</h1>
+      <div class="container">
+        <form class="form-body">
+          <fieldset class="name-fieldset">
+            <div class="input-group">
+              <label for="firstName"> Name</label>
+              <input
+                type="text"
+                id="Name"
+                name="Name"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+              />
+            </div>
+          </fieldset>
+          <br />
+          <div class="input-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Enter your message"
+            ></textarea>
+          </div>
+          <br />
+          <div class="input-group">
+            <button type="submit">Submit</button><br /><br />
+          </div>
+        </form>
+      </div>
     </section>
-
     <!-- Footer Section-->
     <section id="footer">
       <footer>
