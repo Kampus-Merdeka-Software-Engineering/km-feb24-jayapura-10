@@ -40,16 +40,16 @@
 }
 
 .team-slide .team-item:nth-child(3) {
-  left: 40%;
+  left: 60%;
 }
 .team-slide .team-item:nth-child(4) {
-  left: calc(40% + 200px);
+  left: calc(60% + 200px);
 }
 .team-slide .team-item:nth-child(5) {
-  left: calc(40% + 400px);
+  left: calc(60% + 400px);
 }
 .team-slide .team-item:nth-child(n + 6) {
-  left: calc(40% + 420px);
+  left: calc(60% + 420px);
   opacity: 0;
 }
 
