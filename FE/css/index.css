@@ -229,6 +229,12 @@ p.anim {
   background-color: #99ff99;
   background-image: url(../../../asset/images/blur.svg);
 }
+.dashboard iframe {
+  width: 90%;
+  height: 590px;
+  frameborder: 0;
+  border-radius: 1px;
+}
 
 /* Team Section */
 #team {
