@@ -9,7 +9,7 @@
   position: absolute;
   transform: translate(0, 0);
   width: 100%;
-  height: 660px;
+  height: 860px;
   box-shadow: 0px 40px 40px #2b2212e8;
 }
 
@@ -17,7 +17,7 @@
   width: 170px;
   height: 250px;
   position: absolute;
-  transform: translate( 87%, 90%);
+  transform: translate( 240%, 130%);
   border-radius: 20px;
   box-shadow: 0 20px 30px #e6a6305c;
   background-position: 50% 50%;
@@ -46,7 +46,7 @@
   left: calc(40% + 400px);
 }
 .team-slide .team-item:nth-child(n + 6) {
-  left: calc(40% + 420px);
+  left: calc(40% + 520px);
   opacity: 0;
 }
 
