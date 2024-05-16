@@ -9,9 +9,13 @@ body {
   font-family: Arial, sans-serif;
   scroll-behavior: smooth;
   background-color: rgba(255, 255, 255, 0.5);
-  margin: 0;
+  margin-bottom: 3px;
   padding: 0;
-  /* height: fit-content; */
+  height: fit-content;
+}
+h1 {
+  color: #fff;
+  font-size: 3rem;
 }
 
 /* Navigation */
@@ -106,7 +110,7 @@ nav li a:hover:after {
 
 /* Sections */
 section {
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,7 +123,7 @@ section {
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3)),
-    url(../../../asset/images/NYC-01.jpg);
+    url(../../asset/images/NYC-01.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -215,114 +219,6 @@ p.anim {
 .content button:hover {
   border: 0;
 }
-/* About Section */
-#about {
-  height: 600px;
-  margin-top: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-/* Dashboard Section */
-#dashboard {
-  background-color: #99ff99;
-  background-image: url(../../../asset/images/blur.svg);
-}
-
-/* Team Section */
-#team {
-  background-color: #ff99cc;
-}
-
-/* Feedback section */
-
-.name-fieldset {
-  border: none;
-  display: flex;
-  gap: 20px;
-}
-
-.input-group {
-  width: 100%;
-}
-
-.input-group label {
-  font-size: 14px;
-  display: block;
-  margin-bottom: 5px;
-  font-weight: 800;
-}
-
-.input-group input,
-.input-group textarea {
-  width: 400%;
-  padding: 20px;
-  border: 10px solid #ddd;
-  border-radius: 5px;
-  box-shadow: #ff99cc rgba(214, 145, 220, 0.2);
-}
-
-.input-group textarea {
-  height: 200px;
-}
-
-.input-group button {
-  width: 10%;
-  background: #141414;
-  color: #e5d3d3;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.input-group button:hover {
-  background: #191918;
-}.name-fieldset {
-  border: none;
-  display: flex;
-  gap: 30px;
-}
-
-.input-group {
-  width: 100%;
-}
-
-.input-group label {
-  font-size: 14px;
-  display: block;
-  margin-bottom: 5px;
-  font-weight: 800;
-}
-
-.input-group input,
-.input-group textarea {
-  box-shadow: #e199ea rgb(0, 0, 0.);
-  width: 110%;
-  padding: 10px;
-  border: 3px solid #bc94c2;
-  border-radius: 20px;
-
-}
-
-.input-group textarea {
-  height: 200px;
-}
-
-.input-group button {
-  width: 20%;
-  background: #141414;
-  color: #e5d3d3;
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.input-group button:hover {
-  background: #191918;
-}
-
 
 /* Parallax Effect */
 section[data-parallax] {
@@ -344,17 +240,15 @@ section[data-parallax]::before {
 }
 
 /* Content Styling */
-h1 {
-  color: #fff;
-  font-size: 3rem;
-}
 
 /* Footer */
 footer {
   width: 100%;
   background: linear-gradient(to right, #00093c, #2d0b00);
   color: #fff;
-  padding: 50px 0 30px;
+  /* padding: 50px 0 30px; */
+  padding: 1rem;
+  margin-bottom: 3px;
   font-size: 13px;
   line-height: 30px;
 }
@@ -503,3 +397,91 @@ footer .copyright {
   }
 }
 /* testing parallax */
+
+/* Feedback section */
+
+.name-fieldset {
+  border: none;
+  display: flex;
+  gap: 20px;
+}
+
+.input-group {
+  width: 100%;
+}
+
+.input-group label {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 800;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 400%;
+  padding: 20px;
+  border: 10px solid #ddd;
+  border-radius: 5px;
+  box-shadow: #ff99cc rgba(214, 145, 220, 0.2);
+}
+
+.input-group textarea {
+  height: 200px;
+}
+
+.input-group button {
+  width: 10%;
+  background: #141414;
+  color: #e5d3d3;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-group button:hover {
+  background: #191918;
+}
+.name-fieldset {
+  border: none;
+  display: flex;
+  gap: 30px;
+}
+
+.input-group {
+  width: 100%;
+}
+
+.input-group label {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 800;
+}
+
+.input-group input,
+.input-group textarea {
+  box-shadow: #e199ea rgb(0, 0, 0);
+  width: 110%;
+  padding: 10px;
+  border: 3px solid #bc94c2;
+  border-radius: 20px;
+}
+
+.input-group textarea {
+  height: 200px;
+}
+
+.input-group button {
+  width: 20%;
+  background: #141414;
+  color: #e5d3d3;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.input-group button:hover {
+  background: #191918;
+}
