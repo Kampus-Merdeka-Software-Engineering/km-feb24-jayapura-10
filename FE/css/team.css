@@ -1,0 +1,142 @@
+/* Team Section    #513d19*/
+
+#team {
+  width: 100%;
+  height: 100vh;
+  background-color: #c9c8c6;
+
+  border: #080f0f56 solid 2px;
+  text-align: unset;
+}
+.team-container {
+  position: absolute;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 660px;
+  box-shadow: 0px 40px 40px #2b2212e8;
+}
+
+.team-container .team-slide .team-item {
+  width: 170px;
+  height: 250px;
+  position: absolute;
+  transform: translate(87%, 90%);
+  border-radius: 20px;
+  box-shadow: 0 20px 30px #e6a6305c;
+  background-position: 50% 50%;
+  background-size: cover;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.team-slide .team-item:nth-child(1),
+.team-slide .team-item:nth-child(2) {
+  top: 0;
+  left: 0;
+  transform: translate(0, 0);
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+.team-slide .team-item:nth-child(3) {
+  left: 40%;
+}
+.team-slide .team-item:nth-child(4) {
+  left: calc(40% + 200px);
+}
+.team-slide .team-item:nth-child(5) {
+  left: calc(40% + 400px);
+}
+.team-slide .team-item:nth-child(n + 6) {
+  left: calc(40% + 420px);
+  opacity: 0;
+}
+
+.team-item .team-content {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  width: 300px;
+  text-align: left;
+  color: #eee;
+  transform: translate(0, -50%);
+  font-family: system-ui;
+  display: none;
+}
+
+.team-slide .team-item:nth-child(2) .team-content {
+  display: block;
+}
+
+.team-content .content-name {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  opacity: 0;
+  animation: animate 1s ease-in-out 1 forwards;
+}
+
+.team-content .content-deskription {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: animate 1s ease-in-out 0.3s 1 forwards;
+}
+
+.team-content button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 2px solid #e6a630;
+  color: #dbdbdb;
+  cursor: pointer;
+  opacity: 0;
+  animation: animate 1s ease-in-out 0.5s 1 forwards;
+  background: transparent;
+}
+.team-content button:hover {
+  color: #000;
+  background: #e6a630;
+  font-weight: bold;
+  border: none;
+}
+
+@keyframes animate {
+  from {
+    opacity: 0;
+    transform: translate(0, 100ox);
+    filter: blur(33px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0);
+    filter: blur(0);
+  }
+}
+
+.team-button {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+}
+
+.team-button button {
+  width: 50px;
+  height: 30px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+  border: 2px solid #e6a630;
+  color: #ababab;
+  transition: 0.3s;
+  background: transparent;
+}
+
+.team-button button:hover {
+  background: #ababab;
+  color: #000000;
+  border: none;
+}

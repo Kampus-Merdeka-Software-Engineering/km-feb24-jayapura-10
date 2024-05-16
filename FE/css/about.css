@@ -1,0 +1,13 @@
+/* About Section */
+#about {
+  height: 600px;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: aqua;
+}
+
+#about h1 {
+  color: black;
+}
