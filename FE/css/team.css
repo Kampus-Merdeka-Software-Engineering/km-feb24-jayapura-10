@@ -1,6 +1,4 @@
-/* Team Section    #513d19*/
-
-#team {
+Team Section #513d19 #team {
   width: 100%;
   height: 100vh;
   background-color: #c9c8c6;
@@ -29,7 +27,14 @@
   transition: 0.5s;
 }
 
-.team-slide .team-item:nth-child(1),
+.team-slide .team-item:nth-child(1) {
+  top: 0;
+  left: 0;
+  transform: translate(0, 0);
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
 .team-slide .team-item:nth-child(2) {
   top: 0;
   left: 0;

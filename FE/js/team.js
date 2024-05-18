@@ -28,3 +28,7 @@ function slidePrev() {
   let items = document.querySelectorAll('.team-item');
   document.querySelector('.team-slide').prepend(items[items.length - 1]);
 }
+
+
+
+/* .. */
