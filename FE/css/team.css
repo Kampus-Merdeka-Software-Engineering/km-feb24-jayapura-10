@@ -1,7 +1,7 @@
-#team {
+ #team {
   width: 100%;
   height: 100vh;
-  background-color: #513d19;
+  background-color: #c9c8c6;
   border: #080f0f56 solid 2px;
   text-align: unset;
 }
@@ -9,11 +9,7 @@
   position: absolute;
   transform: translate(0, 0);
   width: 100%;
-<<<<<<< Updated upstream
-  height: 860px;
-=======
-  height: 100vh;
->>>>>>> Stashed changes
+  height: 100%;
   box-shadow: 0px 40px 40px #2b2212e8;
 }
 
@@ -21,11 +17,7 @@
   width: 170px;
   height: 250px;
   position: absolute;
-<<<<<<< Updated upstream
-  transform: translate( 240%, 130%);
-=======
-  transform: translate( 72%, 100%);
->>>>>>> Stashed changes
+  transform: translate( 100%, 100%);
   border-radius: 20px;
   box-shadow: 0 20px 30px #e6a6305c;
   background-position: 50% 50%;
@@ -45,7 +37,6 @@
 }
 
 .team-slide .team-item:nth-child(3) {
-<<<<<<< Updated upstream
   left: 40%;
 }
 .team-slide .team-item:nth-child(4) {
@@ -55,20 +46,8 @@
   left: calc(40% + 400px);
 }
 .team-slide .team-item:nth-child(n + 6) {
-  left: calc(40% + 520px);
-=======
-  left: 47%;
-}
-.team-slide .team-item:nth-child(4) {
-  left: calc(46% + 200px);
-}
-.team-slide .team-item:nth-child(5) {
-  left: calc(45% + 400px);
-}
-.team-slide .team-item:nth-child(n + 6) {
-  left: calc(35% + 520px);
->>>>>>> Stashed changes
-  opacity: 0;
+  left: calc(30% + 530px);
+  opacity: 1;
 }
 
 .team-item .team-content {
@@ -148,7 +127,7 @@
   cursor: pointer;
   margin: 0 5px;
   border: 2px solid #e6a630;
-  color:#ababab;
+  color: #ababab;
   transition: 0.3s;
   background: transparent;
 }
