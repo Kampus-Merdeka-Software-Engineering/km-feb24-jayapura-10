@@ -1,4 +1,4 @@
-![Logo](/asset/images/readme-logo.png)
+![Logo](assets/Team_10.png)
 
 <div align="center"><a name="readme-top"></a>
 
