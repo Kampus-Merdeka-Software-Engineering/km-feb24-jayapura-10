@@ -34,29 +34,3 @@ function slidePrev() {
 
 
 /* menambahkan lazy loading*/
-document.addEventListener("DOMContentLoaded", function() {
-  var lazyBgImages = document.querySelectorAll('.team-item');
-
-  function lazyLoadBgImages() {
-      lazyBgImages.forEach(function(bgImage) {
-          if (isElementInViewport(bgImage)) {
-              bgImage.style.backgroundImage = "url('" + bgImage.dataset.bg + "')";
-              bgImage.classList.remove('team-item');
-          }
-      });
-  }
-
-  function isElementInViewport(el) {
-      var rect = el.getBoundingClientRect();
-      return (
-          rect.top >= 0 &&
-          rect.left >= 0 &&
-          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-      );
-  }
-
-  lazyLoadBgImages();
-
-  window.addEventListener('scroll', lazyLoadBgImages);
-});

@@ -1,0 +1,399 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 3px;
+  padding: 0;
+  height: fit-content;
+}
+h1 {
+  color: #fff;
+  font-size: 3rem;
+}
+
+/* Navigation */
+.nav-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(156, 148, 148, 0.5); /* Ganti sesuai kebutuhan */
+  z-index: 1000; /* Pastikan z-index nya lebih tinggi dari elemen lain jika diperlukan */
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Efek bayangan untuk memberi kesan mengambang */
+  backdrop-filter: blur(10px);
+}
+
+.nav-header img {
+  max-width: 100px;
+  height: 40px;
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu li {
+  margin-right: 20px;
+}
+
+#menu li:last-child {
+  margin-right: 20px; /* Menghapus margin-right pada elemen terakhir */
+}
+
+nav li a {
+  color: rgb(13, 26, 38);
+  font-size: 0.89em;
+  height: 50px;
+  letter-spacing: 1px;
+  margin: 0 20px;
+  padding: 0 4px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+}
+
+nav li a:hover {
+  /* border-bottom: 1px solid rgb(28, 121, 184); */
+  color: rgb(236, 236, 236);
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+}
+
+/* Animasi garis loh beb */
+nav li a:before,
+nav li a:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  bottom: -1px;
+  background: #e6a630;
+}
+
+nav li a:before {
+  left: 0;
+  transition: 0.5s;
+}
+
+nav li a:after {
+  background: #e6a630;
+  right: 0;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+nav li a:hover:before {
+  background: #e6a630;
+  width: 100%;
+  transition: width 0.5s cubic-bezier((0.22, 0.61, 0.36, 1));
+}
+
+nav li a:hover:after {
+  background: transparent;
+  width: 100%;
+  /* transition: 0s; */
+}
+
+/* Sections */
+section {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* HeroSection */
+
+.home {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3)),
+    url(/assets/hero_pict.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding: 0 5%;
+  overflow-x: hidden;
+  background-color: #fdfdfd;
+}
+
+.content {
+  color: #fff;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.content h1 {
+  font-size: 120px;
+  line-height: 140px;
+  font-weight: 600;
+  opacity: 0;
+}
+.content p {
+  line-height: 28px;
+  opacity: 0;
+}
+.links {
+  margin-top: 30px;
+  opacity: 0;
+}
+.links button {
+  width: 200px;
+  padding: 15px 0;
+  margin: 0 15px;
+  text-align: center;
+  transition: 0.5s;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #e6a630;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 25px;
+  background: transparent;
+}
+.anim {
+  animation: slideUp 1s linear forwards;
+  animation-delay: 1s;
+}
+@keyframes slideUp {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+p.anim {
+  animation-delay: 2s;
+}
+.links.anim {
+  animation-delay: 3s;
+}
+@media (min-aspect-ratio: 16/9) {
+  .video {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video {
+    width: auto;
+    height: 100%;
+  }
+}
+.content button span {
+  background: #e6a630;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+.content button:hover span {
+  width: 100%;
+}
+.content button:hover {
+  border: 0;
+}
+
+/* Parallax Effect */
+section[data-parallax] {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+section[data-parallax]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Content Styling */
+
+/* Footer */
+footer {
+  width: 100%;
+  background: linear-gradient(to right, #00093c, #2d0b00);
+  color: #fff;
+  /* padding: 50px 0 30px; */
+  padding: 1rem;
+  margin-bottom: 3px;
+  font-size: 13px;
+  line-height: 30px;
+}
+.row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.col {
+  flex-basis: 25%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#branch {
+  flex-direction: row;
+}
+.col:nth-child(2),
+.col:nth-child(3) {
+  flex-basis: 15%;
+}
+.footer_logo {
+  width: 80px;
+  position: relative;
+  top: -23px;
+  left: -20px;
+  margin: 0 10px;
+  max-height: 100px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.footer_about {
+  position: relative;
+  top: -23px;
+}
+.col img {
+  text-align: center;
+}
+.col h3 {
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+  text-align: center;
+}
+.col h3,
+.col p {
+  vertical-align: middle;
+}
+
+.footer_email {
+  width: fit-content;
+  border-bottom: 1px solid #f66335;
+  margin: 20px 0;
+}
+.col ul li {
+  list-style: none;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.col ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.col form {
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #f66335;
+  margin-bottom: 50px;
+}
+.col form .icon {
+  font-size: 18px;
+  margin-right: 10px;
+}
+.col form input {
+  width: 100%;
+  background: transparent;
+  color: #ccc;
+  border: 0;
+  outline: none;
+}
+.col form button {
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+.col form button .icon_right {
+  font-size: 16px;
+  color: #ccc;
+}
+.col .social_icons .social_icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: #fff;
+  background: #f66335;
+  margin-right: 15px;
+  padding: 5px;
+  cursor: pointer;
+}
+hr {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 20px auto;
+}
+footer .copyright {
+  text-align: center;
+}
+.bottom_line {
+  width: 100%;
+  height: 5px;
+  background: #767676;
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  overflow: hidden;
+}
+.bottom_line span {
+  width: 15px;
+  height: 100%;
+  background: #f66335;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moveline 2s linear infinite;
+}
+@keyframes moveline {
+  0% {
+    left: -20px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+/* testing parallax */
