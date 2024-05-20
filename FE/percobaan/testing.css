@@ -1,0 +1,130 @@
+/* testing untuk css team section*/
+
+#team {
+  width: 100%;
+  height: 100vh;
+  background-color: #c9c8c6;
+  border: 2px solid #080f0f56;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.team-container {
+  width: 90%;
+  max-width: 1200px;
+  box-shadow: 0px 40px 40px #2b2212e8;
+  padding: 20px;
+  background: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-slide {
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.team-slide .team-item {
+  width: 170px;
+  height: 250px;
+  border-radius: 20px;
+  box-shadow: 0 20px 30px #e6a6305c;
+  background-position: 50% 50%;
+  background-size: cover;
+  transition: 0.5s;
+  position: relative;
+}
+
+.team-slide .team-item:nth-child(2) .team-content {
+  display: block;
+}
+
+.team-item .team-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  text-align: left;
+  color: #eee;
+  font-family: system-ui;
+  display: none;
+}
+
+.team-content .content-name {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  opacity: 0;
+  animation: animate 1s ease-in-out 1 forwards;
+}
+
+.team-content .content-deskription {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: animate 1s ease-in-out 0.3s 1 forwards;
+}
+
+.team-content button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 2px solid #e6a630;
+  color: #dbdbdb;
+  cursor: pointer;
+  opacity: 0;
+  animation: animate 1s ease-in-out 0.5s 1 forwards;
+  background: transparent;
+}
+
+.team-content button:hover {
+  color: #000;
+  background: #e6a630;
+  font-weight: bold;
+  border: none;
+}
+
+@keyframes animate {
+  from {
+    opacity: 0;
+    transform: translate(0, 100px);
+    filter: blur(33px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0);
+    filter: blur(0);
+  }
+}
+
+.team-button {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.team-button button {
+  width: 50px;
+  height: 30px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+  border: 2px solid #e6a630;
+  color: #ababab;
+  transition: 0.3s;
+  background: transparent;
+}
+
+.team-button button:hover {
+  background: #ababab;
+  color: #000000;
+  border: none;
+}
