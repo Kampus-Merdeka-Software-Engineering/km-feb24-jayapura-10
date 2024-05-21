@@ -268,14 +268,20 @@ footer {
   align-items: center;
 }
 #branch {
+  margin-top: 5%;
   flex-direction: row;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
+
 .col:nth-child(2),
 .col:nth-child(3) {
   flex-basis: 15%;
 }
 .footer_logo {
-  width: 80px;
+  width: 90px;
   position: relative;
   top: -23px;
   left: -20px;
