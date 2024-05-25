@@ -1,23 +1,34 @@
+/* Variabel CSS */
+:root {
+  --main-color: #e6a630;
+  --secondary-color: #ababab;
+  --text-color: #dbdbdb;
+  --background-color: #eee;
+}
+
+/* Struktur utama */
 #team {
   width: 100%;
   height: 100vh;
   margin: 10px 0 100px 0;
 }
+
 .team-container {
   position: absolute;
   transform: translate(0, 0);
   width: 100%;
   height: 100%;
-  box-shadow: 0px 40px 40px #764e0ae8;
+  box-shadow: 0px 40px 40px rgba(118, 78, 10, 0.91);
 }
 
-.team-container .team-slide .team-item {
+/* Elemen tim */
+.team-slide .team-item {
   width: 170px;
   height: 250px;
   position: absolute;
   transform: translate(100%, 100%);
   border-radius: 20px;
-  box-shadow: 0 20px 30px #757575d5;
+  box-shadow: 0 20px 30px rgba(117, 117, 117, 0.83);
   background-position: 50% 50%;
   background-size: cover;
   display: inline-block;
@@ -37,24 +48,28 @@
 .team-slide .team-item:nth-child(3) {
   left: 40%;
 }
+
 .team-slide .team-item:nth-child(4) {
   left: calc(40% + 200px);
 }
+
 .team-slide .team-item:nth-child(5) {
   left: calc(40% + 400px);
 }
+
 .team-slide .team-item:nth-child(n + 6) {
   left: calc(30% + 530px);
   opacity: 0;
 }
 
+/* Konten tim */
 .team-item .team-content {
   position: absolute;
   top: 50%;
   left: 50px;
   width: 300px;
   text-align: left;
-  color: #eee;
+  color: var(--background-color);
   transform: translate(0, -50%);
   font-family: system-ui;
   display: none;
@@ -72,7 +87,7 @@
   animation: animate 1s ease-in-out 1 forwards;
 }
 
-.team-content .content-deskription {
+.team-content .content-description {
   margin-top: 10px;
   margin-bottom: 20px;
   opacity: 0;
@@ -82,8 +97,8 @@
 .team-content button {
   padding: 10px 20px;
   border-radius: 20px;
-  border: 2px solid #e6a630;
-  color: #dbdbdb;
+  border: 2px solid var(--main-color);
+  color: var(--text-color);
   cursor: pointer;
   opacity: 0;
   animation: animate 1s ease-in-out 0.5s 1 forwards;
@@ -92,18 +107,18 @@
 
 .team-content button:hover {
   color: #000;
-  background: #e6a630;
+  background: var(--main-color);
   font-weight: bold;
   border: none;
 }
 
+/* Animasi */
 @keyframes animate {
   from {
     opacity: 0;
     transform: translate(0, 100px);
     filter: blur(33px);
   }
-
   to {
     opacity: 1;
     transform: translate(0);
@@ -111,6 +126,26 @@
   }
 }
 
+.team-content .content-deskription {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: animateDescription 1s ease-in-out 0.3s 1 forwards;
+}
+
+@keyframes animateDescription {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Tombol tim */
 .team-button {
   width: 100%;
   text-align: center;
@@ -122,22 +157,21 @@
   width: 50px;
   height: 30px;
   border-radius: 8px;
-  border: none;
+  border: 2px solid var(--main-color);
   cursor: pointer;
   margin: 0 5px;
-  border: 2px solid #e6a630;
-  color: #ababab;
   transition: 0.3s;
   background: transparent;
+  color: var(--secondary-color);
 }
 
 .team-button button:hover {
-  background: #ababab;
-  color: #000000;
+  background: var(--secondary-color);
+  color: #000;
   border: none;
 }
 
-/* CSS untuk perangkat tablet */
+/* Media queries untuk perangkat tablet */
 @media screen and (min-width: 800px) and (max-width: 1000px) {
   .team-item .team-content {
     left: 20%;
@@ -203,7 +237,7 @@
   }
 }
 
-/* CSS untuk perangkat mobile */
+/* Media queries untuk perangkat mobile */
 @media screen and (max-width: 767px) {
   .team-item .team-content {
     left: 15%;
@@ -211,7 +245,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #e0e0e0ed;
+    color: rgba(224, 224, 224, 0.93);
   }
 
   .team-container .team-slide .team-item {
