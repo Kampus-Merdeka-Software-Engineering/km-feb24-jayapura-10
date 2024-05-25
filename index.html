@@ -1,514 +1,427 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TEAM 10 JAYAPURA 24</title>
-    <link rel="stylesheet" href="./FE/css/index.css" />
-    <link rel="stylesheet" href="./FE/css/team2.css" />
-    <link rel="stylesheet" href="./FE/css/about.css" />
-    <link rel="stylesheet" href="./FE/css/feedback.css" />
-    <link rel="stylesheet" href="./FE/css/dashboard.css" />
-    <link rel="stylesheet" href="./FE/js/index.js" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- untuk menambah icon sosmed-->
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <link
-      rel="icon"
-      href="assets/revou.png"
-      type="image/x-icon"
-      sizes="128x128"
-    />
-  </head>
 
-  <body>
-    <!-- Navigasi -->
-    <nav>
-      <div class="nav-main">
-        <div class="nav-header">
-          <a href="#home">
-            <img src="assets/dark_nyc_logo.png" alt="logo" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TEAM 10 JAYAPURA 24</title>
+  <link rel="stylesheet" href="./FE/css/index.css" />
+  <link rel="stylesheet" href="./FE/css/team2.css" />
+  <link rel="stylesheet" href="./FE/css/about.css" />
+  <link rel="stylesheet" href="./FE/css/feedback.css" />
+  <link rel="stylesheet" href="./FE/css/dashboard.css" />
+  <link rel="stylesheet" href="./FE/js/index.js" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- untuk menambah icon sosmed-->
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <link rel="icon" href="assets/revou.png" type="image/x-icon" sizes="128x128" />
+</head>
+
+<body>
+  <!-- Navigasi -->
+  <nav>
+    <div class="nav-main">
+      <div class="nav-header">
+        <a href="#home">
+          <img src="assets/dark_nyc_logo.png" alt="logo" />
+        </a>
+      </div>
+      <ul id="menu">
+        <li><a href="#home" class="#">Home</a></li>
+        <li><a href="#dashboard" class="#">Dashboard</a></li>
+        <li><a href="#about" class="#">About</a></li>
+        <li><a href="#team" class="#">Team</a></li>
+        <li><a href="#feedback" class="#">feedback</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero section-->
+  <section id="home" class="home" data-parallax>
+    <div class="content">
+      <h1 class="anim">NYC Properties</h1>
+      <p class="anim">
+        Bang lapar bang, bagi duit bang.. aaa tolongin aa. <br />
+        sholat 5 waktu.
+      </p>
+      <div class="links anim">
+        <button><span></span>Pesan Sekarang</button>
+        <button><span></span>Pelajari Lebih lanjut</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dashboard Section-->
+  <section id="dashboard" class="dashboard">
+    <iframe src="https://lookerstudio.google.com/embed/reporting/61d5bb16-dab1-4dd9-8463-512134f97b3c/page/jaCxD"
+      allowfullscreen
+      sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe><br />
+    <button class="click-button"
+      onclick="window.location.href='https://lookerstudio.google.com/reporting/61d5bb16-dab1-4dd9-8463-512134f97b3c'">
+      Kunjungi Looker Studio
+    </button>
+  </section>
+
+  <!--  About Section-->
+  <section id="about" class="about">
+    <h1>judul</h1>
+    <div class="container">
+      <div class="card">
+        <div class="card-inner" style="--clr: #fff">
+          <div class="box">
+            <div class="imgBox">
+              <img
+                src="https://images.unsplash.com/photo-1601049676869-702ea24cfd58?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Team Lead" />
+            </div>
+            <div class="icon">
+              <a href="#" class="iconBox">
+                <span class="material-symbols-outlined">arrow_outward</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="content-about">
+          <h3>Gilang & co.</h3>
+          <p>yok anak pitch deck, isi ya</p>
+          <ul>
+            <li style="--clr-tag: #d3b19a" class="branding">branding</li>
+            <li style="--clr-tag: #70b3b1" class="packaging">packaging</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner" style="--clr: #fff">
+          <div class="box">
+            <div class="imgBox">
+              <img
+                src="https://images.unsplash.com/photo-1613235788366-270e7ac489f3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Tonic" />
+            </div>
+            <div class="icon">
+              <a href="#" class="iconBox">
+                <span class="material-symbols-outlined">arrow_outward</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="content-about">
+          <h3>tonic</h3>
+          <p>yok anak pitch deck, isi ya</p>
+          <ul>
+            <li style="--clr-tag: #d3b19a" class="branding">branding</li>
+            <li style="--clr-tag: #d05fa2" class="marketing">marketing</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner" style="--clr: #fff">
+          <div class="box">
+            <div class="imgBox">
+              <img
+                src="https://images.unsplash.com/photo-1673847401561-fcd75a7888c5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Pitch Deck" />
+            </div>
+            <div class="icon">
+              <a href="#" class="iconBox">
+                <span class="material-symbols-outlined">arrow_outward</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="content-about">
+          <h3>shower gel</h3>
+          <p>yok anak pitch deck, isi ya</p>
+          <ul>
+            <li style="--clr-tag: #d3b19a" class="branding">branding</li>
+            <li style="--clr-tag: #70b3b1" class="packaging">packaging</li>
+            <li style="--clr-tag: #d05fa2" class="marketing">marketing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Des Section-->
+  <section id="team">
+    <div class="team-container">
+      <div class="team-slide">
+        <div class="team-item" style="background-image: url(assets/Foto_orang_1.webp)">
+          <div class="team-content">
+            <div class="content-name">GILANG</div>
+            <div class="content-deskription">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex
+              alias ea, harum explicabo ullam reprehenderit! Corrupti alias
+              doloribus accusantium hic facilis. Distinctio, quis iure?
+              Architecto modi laboriosam accusantium quo assumenda.
+            </div>
+            <button>See More</button>
+          </div>
+        </div>
+        <div class="team-item" style="background-image: url(assets/Foto_orang_2.webp)">
+          <div class="team-content">
+            <div class="content-name">Silvia Putri Anggraeni</div>
+            <div class="content-deskription">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex
+              alias ea, harum explicabo ullam reprehenderit! Corrupti alias
+              doloribus accusantium hic facilis. Distinctio, quis iure?
+              Architecto modi laboriosam accusantium quo assumenda.
+            </div>
+            <button>See More</button>
+          </div>
+        </div>
+        <div class="team-item" style="background-image: url(assets/Foto_orang_3.webp)">
+          <div class="team-content">
+            <div class="content-name">Rinaldi Mulya Pratama</div>
+            <div class="content-deskription">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex
+              alias ea, harum explicabo ullam reprehenderit! Corrupti alias
+              doloribus accusantium hic facilis. Distinctio, quis iure?
+              Architecto modi laboriosam accusantium quo assumenda.
+            </div>
+            <button>See More</button>
+          </div>
+        </div>
+        <div class="team-item" style="background-image: url(assets/Foto_orang_4.webp)">
+          <div class="team-content">
+            <div class="content-name">Dewangga Putra Fatin Casey</div>
+            <div class="content-deskription">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex
+              alias ea, harum explicabo ullam reprehenderit! Corrupti alias
+              doloribus accusantium hic facilis. Distinctio, quis iure?
+              Architecto modi laboriosam accusantium quo assumenda.
+            </div>
+            <button>See More</button>
+          </div>
+        </div>
+        <div class="team-item" style="background-image: url(assets/Foto_orang_5.webp)">
+          <div class="team-content">
+            <div class="content-name">Riska mawarni Laia</div>
+            <div class="content-deskription">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex
+              alias ea, harum explicabo ullam reprehenderit! Corrupti alias
+              doloribus accusantium hic facilis. Distinctio, quis iure?
+              Architecto modi laboriosam accusantium quo assumenda.
+            </div>
+            <button>See More</button>
+          </div>
+        </div>
+        <div class="team-item" style="background-image: url(assets/Foto_orang_6.webp)">
+          <div class="team-content">
+            <div class="content-name">Septi Sekar Arum</div>
+            <div class="content-deskription">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex
+              alias ea, harum explicabo ullam reprehenderit! Corrupti alias
+              doloribus accusantium hic facilis. Distinctio, quis iure?
+              Architecto modi laboriosam accusantium quo assumenda.
+            </div>
+            <button>See More</button>
+          </div>
+        </div>
+        <div class="team-item" style="background-image: url(assets/Foto_orang_7.webp)">
+          <div class="team-content">
+            <div class="content-name">Septi Sekar Arum</div>
+            <div class="content-deskription">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex
+              alias ea, harum explicabo ullam reprehenderit! Corrupti alias
+              doloribus accusantium hic facilis. Distinctio, quis iure?
+              Architecto modi laboriosam accusantium quo assumenda.
+            </div>
+            <button>See More</button>
+          </div>
+        </div>
+        <div class="team-item" style="background-image: url(assets/Foto_orang_8.webp)">
+          <div class="team-content">
+            <div class="content-name">Dewangga Putra Fatin Casey</div>
+            <div class="content-deskription">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex
+              alias ea, harum explicabo ullam reprehenderit! Corrupti alias
+              doloribus accusantium hic facilis. Distinctio, quis iure?
+              Architecto modi laboriosam accusantium quo assumenda.
+            </div>
+            <button>See More</button>
+          </div>
+        </div>
+        <div class="team-item" style="background-image: url(assets/Foto_orang_9.webp)">
+          <div class="team-content">
+            <div class="content-name">Riska mawarni Laia</div>
+            <div class="content-deskription">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex
+              alias ea, harum explicabo ullam reprehenderit! Corrupti alias
+              doloribus accusantium hic facilis. Distinctio, quis iure?
+              Architecto modi laboriosam accusantium quo assumenda.
+            </div>
+            <button>See More</button>
+          </div>
+        </div>
+        <div class="team-item" style="background-image: url(assets/Foto_orang_10.webp)">
+          <div class="team-content">
+            <div class="content-name">Riska mawarni Laia</div>
+            <div class="content-deskription">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex
+              alias ea, harum explicabo ullam reprehenderit! Corrupti alias
+              doloribus accusantium hic facilis. Distinctio, quis iure?
+              Architecto modi laboriosam accusantium quo assumenda.
+            </div>
+            <button>See More</button>
+          </div>
+        </div>
+        <div class="team-item" style="background-image: url(assets/Foto_orang_11.webp)">
+          <div class="team-content">
+            <div class="content-name">Septi Sekar Arum</div>
+            <div class="content-deskription">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex
+              alias ea, harum explicabo ullam reprehenderit! Corrupti alias
+              doloribus accusantium hic facilis. Distinctio, quis iure?
+              Architecto modi laboriosam accusantium quo assumenda.
+            </div>
+            <button>See More</button>
+          </div>
+        </div>
+        <div class="team-item" style="background-image: url(assets/Foto_orang_12.webp)">
+          <div class="team-content">
+            <div class="content-name">Dewangga Putra Fatin Casey</div>
+            <div class="content-deskription">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex
+              alias ea, harum explicabo ullam reprehenderit! Corrupti alias
+              doloribus accusantium hic facilis. Distinctio, quis iure?
+              Architecto modi laboriosam accusantium quo assumenda.
+            </div>
+            <button>See More</button>
+          </div>
+        </div>
+        <div class="team-item" style="background-image: url(assets/Foto_orang_13.webp)">
+          <div class="team-content">
+            <div class="content-name">Riska mawarni Laia</div>
+            <div class="content-deskription">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex
+              alias ea, harum explicabo ullam reprehenderit! Corrupti alias
+              doloribus accusantium hic facilis. Distinctio, quis iure?
+              Architecto modi laboriosam accusantium quo assumenda.
+            </div>
+            <button>See More</button>
+          </div>
+        </div>
+        <div class="team-item" style="background-image: url(assets/Foto_orang_14.webp)">
+          <div class="team-content">
+            <div class="content-name">Riska mawarni Laia</div>
+            <div class="content-deskription">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex
+              alias ea, harum explicabo ullam reprehenderit! Corrupti alias
+              doloribus accusantium hic facilis. Distinctio, quis iure?
+              Architecto modi laboriosam accusantium quo assumenda.
+            </div>
+            <button>See More</button>
+          </div>
+        </div>
+      </div>
+      <div class="team-button">
+        <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!--Feedback Section -->
+  <section id="feedback">
+    <div class="container">
+      <form class="form-body">
+        <fieldset class="name-fieldset">
+          <div class="input-group">
+            <label for="firstName"> Name</label>
+            <input type="text" id="Name" name="Name" placeholder="Enter your name" />
+          </div>
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Enter your email" />
+          </div>
+        </fieldset>
+        <br />
+        <div class="input-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+        </div>
+        <br />
+        <div class="input-group">
+          <button type="submit">Submit</button><br /><br />
+        </div>
+      </form>
+    </div>
+  </section>
+  <!-- Footer Section-->
+  <section id="footer">
+    <footer>
+      <div class="row">
+        <div class="col" id="branch">
+          <a href="https://revou.co/">
+            <img src="assets/revou.png" class="footer_logo" />
+          </a>
+          <a href="https://kampusmerdeka.kemdikbud.go.id/">
+            <img src="assets/KM.png" class="footer_logo" />
+          </a>
+          <a href="#">
+            <img src="assets/dark_nyc_logo.png" class="footer_logo" />
           </a>
         </div>
-        <ul id="menu">
-          <li><a href="#home" class="#">Home</a></li>
-          <li><a href="#dashboard" class="#">Dashboard</a></li>
-          <li><a href="#about" class="#">About</a></li>
-          <li><a href="#team" class="#">Team</a></li>
-          <li><a href="#feedback" class="#">feedback</a></li>
-        </ul>
-      </div>
-    </nav>
-
-    <!-- Hero section-->
-    <section id="home" class="home" data-parallax>
-      <div class="content">
-        <h1 class="anim">NYC Properties</h1>
-        <p class="anim">
-          Bang lapar bang, bagi duit bang.. aaa tolongin aa. <br />
-          sholat 5 waktu.
-        </p>
-        <div class="links anim">
-          <button><span></span>Pesan Sekarang</button>
-          <button><span></span>Pelajari Lebih lanjut</button>
+        <div class="col" id="desc">
+          <h3>
+            Lokasi
+            <div class="bottom_line"><span></span></div>
+          </h3>
+          <p>123 Empat Lima Enam</p>
+          <p>Jakarta, POS 000, Indonesia</p>
+          <p class="footer_email">team10.jayapura24@gmail.com</p>
         </div>
-      </div>
-    </section>
-
-    <!-- Dashboard Section-->
-    <section id="dashboard" class="dashboard">
-      <iframe
-        src="https://lookerstudio.google.com/embed/reporting/61d5bb16-dab1-4dd9-8463-512134f97b3c/page/jaCxD"
-        allowfullscreen
-        sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
-      ></iframe
-      ><br />
-      <button
-        class="click-button"
-        onclick="window.location.href='https://lookerstudio.google.com/reporting/61d5bb16-dab1-4dd9-8463-512134f97b3c'"
-      >
-        Kunjungi Looker Studio
-      </button>
-    </section>
-
-    <!--  About Section-->
-    <section id="about" class="about">
-      <h1>judul</h1>
-      <div class="container">
-        <div class="card">
-          <div class="card-inner" style="--clr: #fff">
-            <div class="box">
-              <div class="imgBox">
-                <img
-                  src="https://images.unsplash.com/photo-1601049676869-702ea24cfd58?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="Team Lead"
-                />
-              </div>
-              <div class="icon">
-                <a href="#" class="iconBox">
-                  <span class="material-symbols-outlined"
-                    >arrow_outward</span
-                  ></a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="content-about">
-            <h3>Gilang & co.</h3>
-            <p>yok anak pitch deck, isi ya</p>
-            <ul>
-              <li style="--clr-tag: #d3b19a" class="branding">branding</li>
-              <li style="--clr-tag: #70b3b1" class="packaging">packaging</li>
-            </ul>
-          </div>
+        <div class="col" id="desc">
+          <h3>
+            Links
+            <div class="bottom_line"><span></span></div>
+          </h3>
+          <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#dashboard">DASHBOARD</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#team">TEAM DESC</a></li>
+            <li><a href="#feedback">FEEDBACK</a></li>
+          </ul>
         </div>
-
-        <div class="card">
-          <div class="card-inner" style="--clr: #fff">
-            <div class="box">
-              <div class="imgBox">
-                <img
-                  src="https://images.unsplash.com/photo-1613235788366-270e7ac489f3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="Tonic"
-                />
-              </div>
-              <div class="icon">
-                <a href="#" class="iconBox">
-                  <span class="material-symbols-outlined"
-                    >arrow_outward</span
-                  ></a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="content-about">
-            <h3>tonic</h3>
-            <p>yok anak pitch deck, isi ya</p>
-            <ul>
-              <li style="--clr-tag: #d3b19a" class="branding">branding</li>
-              <li style="--clr-tag: #d05fa2" class="marketing">marketing</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-inner" style="--clr: #fff">
-            <div class="box">
-              <div class="imgBox">
-                <img
-                  src="https://images.unsplash.com/photo-1673847401561-fcd75a7888c5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="Pitch Deck"
-                />
-              </div>
-              <div class="icon">
-                <a href="#" class="iconBox">
-                  <span class="material-symbols-outlined"
-                    >arrow_outward</span
-                  ></a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="content-about">
-            <h3>shower gel</h3>
-            <p>yok anak pitch deck, isi ya</p>
-            <ul>
-              <li style="--clr-tag: #d3b19a" class="branding">branding</li>
-              <li style="--clr-tag: #70b3b1" class="packaging">packaging</li>
-              <li style="--clr-tag: #d05fa2" class="marketing">marketing</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Team Des Section-->
-    <section id="team">
-      <div class="team-container">
-        <div class="team-slide">
-          <div
-            class="team-item"
-            style="background-image: url(/asset/fotoOrang/Foto_orang_1.jpg)"
-          >
-            <div class="team-content">
-              <div class="content-name">GILANG</div>
-              <div class="content-deskription">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex
-                alias ea, harum explicabo ullam reprehenderit! Corrupti alias
-                doloribus accusantium hic facilis. Distinctio, quis iure?
-                Architecto modi laboriosam accusantium quo assumenda.
-              </div>
-              <button>See More</button>
-            </div>
-          </div>
-          <div
-            class="team-item"
-            style="background-image: url(assets/Foto_orang_2.jpg)"
-          >
-            <div class="team-content">
-              <div class="content-name">Silvia Putri Anggraeni</div>
-              <div class="content-deskription">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex
-                alias ea, harum explicabo ullam reprehenderit! Corrupti alias
-                doloribus accusantium hic facilis. Distinctio, quis iure?
-                Architecto modi laboriosam accusantium quo assumenda.
-              </div>
-              <button>See More</button>
-            </div>
-          </div>
-          <div
-            class="team-item"
-            style="background-image: url(assets/Foto_orang_3.jpg)"
-          >
-            <div class="team-content">
-              <div class="content-name">Rinaldi Mulya Pratama</div>
-              <div class="content-deskription">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex
-                alias ea, harum explicabo ullam reprehenderit! Corrupti alias
-                doloribus accusantium hic facilis. Distinctio, quis iure?
-                Architecto modi laboriosam accusantium quo assumenda.
-              </div>
-              <button>See More</button>
-            </div>
-          </div>
-          <div
-            class="team-item"
-            style="background-image: url(assets/Foto_orang_4.jpg)"
-          >
-            <div class="team-content">
-              <div class="content-name">Dewangga Putra Fatin Casey</div>
-              <div class="content-deskription">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex
-                alias ea, harum explicabo ullam reprehenderit! Corrupti alias
-                doloribus accusantium hic facilis. Distinctio, quis iure?
-                Architecto modi laboriosam accusantium quo assumenda.
-              </div>
-              <button>See More</button>
-            </div>
-          </div>
-          <div
-            class="team-item"
-            style="background-image: url(assets/Foto_orang_5.jpg)"
-          >
-            <div class="team-content">
-              <div class="content-name">Riskamawarni Laia</div>
-              <div class="content-deskription">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex
-                alias ea, harum explicabo ullam reprehenderit! Corrupti alias
-                doloribus accusantium hic facilis. Distinctio, quis iure?
-                Architecto modi laboriosam accusantium quo assumenda.
-              </div>
-              <button>See More</button>
-            </div>
-          </div>
-          <div
-            class="team-item"
-            style="background-image: url(assets/Foto_orang_6.jpg)"
-          >
-            <div class="team-content">
-              <div class="content-name">Septi Sekar Arum</div>
-              <div class="content-deskription">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex
-                alias ea, harum explicabo ullam reprehenderit! Corrupti alias
-                doloribus accusantium hic facilis. Distinctio, quis iure?
-                Architecto modi laboriosam accusantium quo assumenda.
-              </div>
-              <button>See More</button>
-            </div>
-          </div>
-          <div
-            class="team-item"
-            style="background-image: url(assets/Foto_orang_7.jpg)"
-          >
-            <div class="team-content">
-              <div class="content-name">Septi Sekar Arum</div>
-              <div class="content-deskription">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex
-                alias ea, harum explicabo ullam reprehenderit! Corrupti alias
-                doloribus accusantium hic facilis. Distinctio, quis iure?
-                Architecto modi laboriosam accusantium quo assumenda.
-              </div>
-              <button>See More</button>
-            </div>
-          </div>
-          <div
-            class="team-item"
-            style="background-image: url(assets/Foto_orang_8.jpg)"
-          >
-            <div class="team-content">
-              <div class="content-name">Dewangga Putra Fatin Casey</div>
-              <div class="content-deskription">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex
-                alias ea, harum explicabo ullam reprehenderit! Corrupti alias
-                doloribus accusantium hic facilis. Distinctio, quis iure?
-                Architecto modi laboriosam accusantium quo assumenda.
-              </div>
-              <button>See More</button>
-            </div>
-          </div>
-          <div
-            class="team-item"
-            style="background-image: url(assets/Foto_orang_9.jpg)"
-          >
-            <div class="team-content">
-              <div class="content-name">Riskamawarni Laia</div>
-              <div class="content-deskription">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex
-                alias ea, harum explicabo ullam reprehenderit! Corrupti alias
-                doloribus accusantium hic facilis. Distinctio, quis iure?
-                Architecto modi laboriosam accusantium quo assumenda.
-              </div>
-              <button>See More</button>
-            </div>
-          </div>
-          <div
-            class="team-item"
-            style="background-image: url(assets/Foto_orang_10.jpg)"
-          >
-            <div class="team-content">
-              <div class="content-name">Riskamawarni Laia</div>
-              <div class="content-deskription">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex
-                alias ea, harum explicabo ullam reprehenderit! Corrupti alias
-                doloribus accusantium hic facilis. Distinctio, quis iure?
-                Architecto modi laboriosam accusantium quo assumenda.
-              </div>
-              <button>See More</button>
-            </div>
-          </div>
-          <div
-            class="team-item"
-            style="background-image: url(assets/Foto_orang_11.jpg)"
-          >
-            <div class="team-content">
-              <div class="content-name">Septi Sekar Arum</div>
-              <div class="content-deskription">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex
-                alias ea, harum explicabo ullam reprehenderit! Corrupti alias
-                doloribus accusantium hic facilis. Distinctio, quis iure?
-                Architecto modi laboriosam accusantium quo assumenda.
-              </div>
-              <button>See More</button>
-            </div>
-          </div>
-          <div
-            class="team-item"
-            style="background-image: url(assets/Foto_orang_12.jpg)"
-          >
-            <div class="team-content">
-              <div class="content-name">Dewangga Putra Fatin Casey</div>
-              <div class="content-deskription">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex
-                alias ea, harum explicabo ullam reprehenderit! Corrupti alias
-                doloribus accusantium hic facilis. Distinctio, quis iure?
-                Architecto modi laboriosam accusantium quo assumenda.
-              </div>
-              <button>See More</button>
-            </div>
-          </div>
-          <div
-            class="team-item"
-            style="background-image: url(assets/Foto_orang_13.jpg)"
-          >
-            <div class="team-content">
-              <div class="content-name">Riskamawarni Laia</div>
-              <div class="content-deskription">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex
-                alias ea, harum explicabo ullam reprehenderit! Corrupti alias
-                doloribus accusantium hic facilis. Distinctio, quis iure?
-                Architecto modi laboriosam accusantium quo assumenda.
-              </div>
-              <button>See More</button>
-            </div>
-          </div>
-          <div
-            class="team-item"
-            style="background-image: url(assets/Foto_orang_14.jpg)"
-          >
-            <div class="team-content">
-              <div class="content-name">Riskamawarni Laia</div>
-              <div class="content-deskription">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex
-                alias ea, harum explicabo ullam reprehenderit! Corrupti alias
-                doloribus accusantium hic facilis. Distinctio, quis iure?
-                Architecto modi laboriosam accusantium quo assumenda.
-              </div>
-              <button>See More</button>
-            </div>
-          </div>
-        </div>
-        <div class="team-button">
-          <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
-          <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
-        </div>
-      </div>
-    </section>
-
-    <!--Feedback Section -->
-    <section id="feedback">
-      <div class="container">
-        <form class="form-body">
-          <fieldset class="name-fieldset">
-            <div class="input-group">
-              <label for="firstName"> Name</label>
-              <input
-                type="text"
-                id="Name"
-                name="Name"
-                placeholder="Enter your name"
-              />
-            </div>
-            <div class="input-group">
-              <label for="email">Email</label>
-              <input
-                type="text"
-                id="email"
-                name="email"
-                placeholder="Enter your email"
-              />
-            </div>
-          </fieldset>
-          <br />
-          <div class="input-group">
-            <label for="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Enter your message"
-            ></textarea>
-          </div>
-          <br />
-          <div class="input-group">
-            <button type="submit">Submit</button><br /><br />
-          </div>
-        </form>
-      </div>
-    </section>
-    <!-- Footer Section-->
-    <section id="footer">
-      <footer>
-        <div class="row">
-          <div class="col" id="branch">
-            <a href="https://revou.co/">
-              <img src="assets/revou.png" class="footer_logo" />
-            </a>
-            <a href="https://kampusmerdeka.kemdikbud.go.id/">
-              <img src="assets/KM.png" class="footer_logo" />
+        <div class="col" id="desc">
+          <h3>
+            Berita
+            <div class="bottom_line"><span></span></div>
+          </h3>
+          <form>
+            <ion-icon class="icon" name="mail"></ion-icon>
+            <input type="email" placeholder="Masukin dong emailnya" required />
+            <button type="submit">
+              <ion-icon class="icon_right" name="arrow-round-forward"></ion-icon>
+            </button>
+          </form>
+          <div class="social_icons">
+            <a href="#">
+              <ion-icon class="social_icon" name="logo-github"></ion-icon>
             </a>
             <a href="#">
-              <img src="assets/dark_nyc_logo.png" class="footer_logo" />
+              <ion-icon class="social_icon" name="logo-whatsapp"></ion-icon>
+            </a>
+            <a href="#">
+              <ion-icon class="social_icon" name="logo-instagram"></ion-icon>
+            </a>
+            <a href="#">
+              <ion-icon class="social_icon" name="mail"></ion-icon>
             </a>
           </div>
-          <div class="col" id="desc">
-            <h3>
-              Lokasi
-              <div class="bottom_line"><span></span></div>
-            </h3>
-            <p>123 Empat Lima Enam</p>
-            <p>Jakarta, POS 000, Indonesia</p>
-            <p class="footer_email">team10.jayapura24@gmail.com</p>
-          </div>
-          <div class="col" id="desc">
-            <h3>
-              Links
-              <div class="bottom_line"><span></span></div>
-            </h3>
-            <ul>
-              <li><a href="#home">HOME</a></li>
-              <li><a href="#dashboard">DASHBOARD</a></li>
-              <li><a href="#about">ABOUT</a></li>
-              <li><a href="#team">TEAM DESC</a></li>
-              <li><a href="#feedback">FEEDBACK</a></li>
-            </ul>
-          </div>
-          <div class="col" id="desc">
-            <h3>
-              Berita
-              <div class="bottom_line"><span></span></div>
-            </h3>
-            <form>
-              <ion-icon class="icon" name="mail"></ion-icon>
-              <input
-                type="email"
-                placeholder="Masukin dong emailnya"
-                required
-              />
-              <button type="submit">
-                <ion-icon
-                  class="icon_right"
-                  name="arrow-round-forward"
-                ></ion-icon>
-              </button>
-            </form>
-            <div class="social_icons">
-              <a href="#">
-                <ion-icon class="social_icon" name="logo-github"></ion-icon>
-              </a>
-              <a href="#">
-                <ion-icon class="social_icon" name="logo-whatsapp"></ion-icon>
-              </a>
-              <a href="#">
-                <ion-icon class="social_icon" name="logo-instagram"></ion-icon>
-              </a>
-              <a href="#">
-                <ion-icon class="social_icon" name="mail"></ion-icon>
-              </a>
-            </div>
-          </div>
         </div>
-        <hr />
-        <p class="copyright">Team 10 Ⓒ 2024 - All Rights Reserved</p>
-      </footer>
-    </section>
+      </div>
+      <hr />
+      <p class="copyright">Team 10 Ⓒ 2024 - All Rights Reserved</p>
+    </footer>
+  </section>
 
-    <!-- script zone-->
-    <script src="./FE/js/index.js"></script>
-    <script src="./FE/js/team.js"></script>
-  </body>
+  <!-- script zone-->
+  <script src="./FE/js/index.js"></script>
+  <script src="./FE/js/team.js"></script>
+</body>
+
 </html>
