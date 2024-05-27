@@ -4,6 +4,7 @@
   max-width: 1200px;
   margin: 0 auto;
   color: #111;
+  background: linear-gradient(to left, #080c0f, #33353a);
 }
 
 #about h2 {

@@ -6,7 +6,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* background-color: #c9c8c6; */
+  background: linear-gradient(to left, #080c0f, #33353a);
 }
 
 /* Atur iframe agar memenuhi kontainer */
