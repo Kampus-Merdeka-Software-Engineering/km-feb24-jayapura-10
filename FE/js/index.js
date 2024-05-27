@@ -12,9 +12,8 @@
     });
   });
   
+  
 
-<<<<<<< HEAD
-=======
   /* rezie ukuran dashboard*/ 
   document.addEventListener('DOMContentLoaded', function() {
     var iframe = document.querySelector('iframe');
@@ -27,7 +26,6 @@
     resizeIframe(); // Adjust height on load
   });
 
->>>>>>> main
   /*  hampir sama dengan yang diatas, hanya saja ini utnuk yang footernya*/
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
