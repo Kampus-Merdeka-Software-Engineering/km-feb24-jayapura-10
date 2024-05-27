@@ -1,4 +1,4 @@
-![Logo](assets/Team_10.png)
+![Logo](assets/Team_10.webp)
 
 <div align="center"><a name="readme-top"></a>
 
