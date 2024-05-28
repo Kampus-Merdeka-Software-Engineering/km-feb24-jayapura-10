@@ -1,7 +1,9 @@
 // Mengatur latar belakang untuk setiap elemen .team-item
 document.querySelectorAll('.team-item').forEach(item => {
   const background = item.getAttribute('data-background');
-  item.style.backgroundImage = `url(${background})`;
+  if (background) {
+    item.style.backgroundImage = `url(${background})`;
+  }
 });
 
 // Mengatur event listener untuk tombol next dan prev
