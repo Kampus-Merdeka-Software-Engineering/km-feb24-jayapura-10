@@ -50,7 +50,7 @@ h1 {
 }
 
 #menu li:last-child {
-  margin-right: 20px; /* Menghapus margin-right pada elemen terakhir */
+  margin-right: 0px; /* Menghapus margin-right pada elemen terakhir */
 }
 
 nav li a {
