@@ -218,6 +218,7 @@
   .team-slide .team-item:nth-child(3) {
     left: 8%;
     bottom: 30%;
+    opacity: 1;
   }
 
   .team-slide .team-item:nth-child(3):hover {
@@ -270,6 +271,7 @@
   .team-slide .team-item:nth-child(3) {
     left: 10px;
     bottom: 30%;
+    opacity: 1;
   }
 
   .team-slide .team-item:nth-child(4) {
