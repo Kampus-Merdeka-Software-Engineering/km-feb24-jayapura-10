@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Laporan Data Analisis</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Baris Pertama: Filter dan Tombol Filter -->
+      <div class="row">
+        <div class="filter">
+          <label for="category">Kategori Bangunan:</label>
+          <select id="category" multiple>
+            <option value="">All</option>
+            <option value="01 ONE FAMILY DWELLINGS">
+              01 ONE FAMILY DWELLINGS
+            </option>
+            <option value="02 TWO FAMILY DWELLINGS">
+              02 TWO FAMILY DWELLINGS
+            </option>
+            <option value="07 RENTALS - WALKUP APARTMENTS">
+              07 RENTALS - WALKUP APARTMENTS
+            </option>
+            <option value="22 STORE BUILDINGS">22 STORE BUILDINGS</option>
+          </select>
+        </div>
+        <div class="filter">
+          <label for="date-start">Tanggal Mulai:</label>
+          <input type="date" id="date-start" value="2016-09-01" />
+          <label for="date-end">Tanggal Akhir:</label>
+          <input type="date" id="date-end" value="2017-08-31" />
+        </div>
+        <div class="filter">
+          <label for="borough">Borough:</label>
+          <select id="borough">
+            <option value="">All</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+        <div class="filter">
+          <button id="filter-button">Filter</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="score-card">
+          <div>
+            <img src="money-icon.png" alt="Revenue" width="24" />
+            <h3>Total Revenue</h3>
+          </div>
+          <div class="value" id="total-revenue">$0</div>
+        </div>
+        <div class="score-card">
+          <div>
+            <img src="block-icon.png" alt="Block" width="24" />
+            <h3>Total Block</h3>
+          </div>
+          <div class="value" id="total-block">0</div>
+        </div>
+        <div class="score-card">
+          <div>
+            <img src="order-icon.png" alt="Order Volume" width="24" />
+            <h3>Order Volume</h3>
+          </div>
+          <div class="value" id="order-volume">0</div>
+        </div>
+      </div>
+      <!-- Baris Kedua: Line Chart dan Bar Chart Vertikal -->
+      <div class="row">
+        <div class="chart-container">
+          <canvas id="line-chart"></canvas>
+        </div>
+        <div class="chart-container">
+          <canvas id="bar-chart-vertical"></canvas>
+        </div>
+        <div class="chart-container">
+          <canvas id="bar-chart-horizontal"></canvas>
+        </div>
+      </div>
+      <!-- Baris Ketiga: Bar Chart Horizontal 1 dan Bar Chart Horizontal 2 -->
+      <div class="row">
+        <div class="chart-container">
+          <canvas id="bar-chart-horizontal-1"></canvas>
+        </div>
+        <div class="chart-container">
+          <canvas id="bar-chart-horizontal-2"></canvas>
+        </div>
+      </div>
+      <!-- Baris Keempat: Pie Chart dan Line Chart 2 -->
+      <div class="row">
+        <div class="chart-container">
+          <canvas id="pie-chart"></canvas>
+        </div>
+        <div class="chart-container">
+          <canvas id="line-chart-2"></canvas>
+        </div>
+      </div>
+      <div class="row">
+        <div class="chart-container">
+          <canvas id="pie-chart"></canvas>
+        </div>
+      </div>
+      <div class="container-2">
+        <!-- <div class="search-container"> -->
+        <input type="text" id="search" placeholder="Search..." />
+        <!-- </div> -->
+        <table id="data-table">
+          <thead>
+            <tr>
+              <th>BOROUGH</th>
+              <th>NEIGHBORHOOD</th>
+              <th>BUILDINGCATEGORY</th>
+              <!-- <th>TAX</th>
+              <th>BLOCK</th>
+              <th>LOT</th>
+              <th>tes</th>
+              <th>tes</th>
+              <th>tes</th>
+              <th>tes</th>
+              <th>tes</th>
+               <th>tes</th>
+              <th>tes</th>
+              <th>tes</th>
+              <th>tes</th>
+              <th>tes</th>
+              <th>tes</th>
+              <th>tes</th> -->
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <div id="pagination"></div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Laporan Data Analis</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <label for="category">Category Bangunan</label>
+          <select id="category" class="form-control">
+            <option value="1">Category 1</option>
+            <option value="2">Category 2</option>
+            <option value="3">Category 3</option>
+            <option value="4">Category 4</option>
+            <option value="5">Category 5</option>
+          </select>
+        </div>
+        <div class="col-md-4">
+          <label for="startDate">Rentang Tahun dan Tanggal Penjualan</label>
+          <input
+            type="date"
+            id="startDate"
+            class="form-control"
+            value="2016-09-01"
+          />
+          <input
+            type="date"
+            id="endDate"
+            class="form-control mt-2"
+            value="2017-08-31"
+          />
+        </div>
+        <div class="col-md-4">
+          <label for="borough">Borough</label>
+          <select id="borough" class="form-control">
+            <option value="1">Borough 1</option>
+            <option value="2">Borough 2</option>
+            <option value="3">Borough 3</option>
+            <option value="4">Borough 4</option>
+            <option value="5">Borough 5</option>
+            <option value="6">Borough 6</option>
+          </select>
+        </div>
+      </div>
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <div class="card text-white bg-dark">
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title">Total Revenue</h5>
+                <img src="money-icon.png" alt="money" class="icon" />
+              </div>
+              <h3 id="totalRevenue">0</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-white bg-dark">
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title">Total Block</h5>
+                <img src="block-icon.png" alt="block" class="icon" />
+              </div>
+              <h3 id="totalBlock">0</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-white bg-dark">
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title">Order Volume</h5>
+                <img src="order-icon.png" alt="order" class="icon" />
+              </div>
+              <h3 id="orderVolume">0</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-4">
+        <div class="col-md-6">
+          <canvas id="salesReportChart"></canvas>
+        </div>
+        <div class="col-md-6">
+          <canvas id="boroughSalePriceChart"></canvas>
+        </div>
+      </div>
+      <div class="row mb-4">
+        <div class="col-md-6">
+          <canvas id="topBuildingCategoryChart"></canvas>
+        </div>
+        <div class="col-md-6">
+          <canvas id="topNeighborhoodChart"></canvas>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <canvas id="priceClassificationChart"></canvas>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

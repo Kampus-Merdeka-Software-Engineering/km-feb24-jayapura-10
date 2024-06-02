@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEAM 10 JAYAPURA 24</title>
+    <link rel="stylesheet" href="./FE/css/index.css" />
+    <link rel="stylesheet" href="./FE/css/home.css" />
+    <link rel="stylesheet" href="./FE/css/team.css" />
+    <link rel="stylesheet" href="./FE/css/about.css" />
+    <link rel="stylesheet" href="./FE/css/feedback.css" />
+    <link rel="stylesheet" href="./FE/css/dashboard.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- untuk menambah icon sosmed-->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link
+      rel="icon"
+      href="assets/revou.webp"
+      type="image/x-icon"
+      sizes="128x128"
+    />
+  </head>
+
+  <body>
+    <!-- Navigasi -->
+    <nav>
+      <div class="nav-main">
+        <div class="nav-header">
+          <a href="#home">
+            <img src="assets/dark logo nyc.png" alt="logo" />
+          </a>
+        </div>
+        <ul id="menu">
+          <li><a href="#home" class="#">Home</a></li>
+          <li><a href="#dashboard" class="#">Dashboard</a></li>
+          <li><a href="#about" class="#">About</a></li>
+          <li><a href="#team" class="#">Team</a></li>
+          <li><a href="#feedback" class="#">feedback</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- home section-->
+    <section id="home" class="home" data-parallax>
+      <div class="home-content">
+        <h4>Hey there, this is website about</h4>
+        <h1>NYC Property Sales</h1>
+        <h4>- by team 10 Jayapura</h4>
+        <p>
+          Ini adalah penjelasan singkat tentang sesuatu yang sangat menarik dan
+          penting. Ini adalah penjelasan singkat tentang sesuatu yang sangat
+          menarik dan penting. Ini adalah penjelasan singkat tentang sesuatu
+          yang sangat menarik dan penting.
+        </p>
+        <button>Get in Touch</button>
+      </div>
+    </section>
+    -->
+
+    <!-- Dashboard Section-->
+    <!-- <section id="dashboard" class="dashboard">
+      <iframe
+        src="https://lookerstudio.google.com/embed/reporting/61d5bb16-dab1-4dd9-8463-512134f97b3c/page/jaCxD"
+        allowfullscreen
+        sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
+      ></iframe
+      ><br />
+      <button
+        class="click-button"
+        onclick="window.location.href='https://lookerstudio.google.com/reporting/61d5bb16-dab1-4dd9-8463-512134f97b3c'"
+      >
+        Kunjungi Looker Studio
+      </button> 
+    </section>
+
+    <!--  About Section-->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="card">
+          <div class="card-inner" style="--clr: #fff">
+            <div class="box">
+              <div class="imgBox">
+                <img src="assets/about/about1.jpg" alt="Team Lead" />
+              </div>
+              <div class="icon">
+                <a href="#" class="iconBox">
+                  <span class="material-symbols-outlined"
+                    >arrow_outward</span
+                  ></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="content-about">
+            <h3>Borough</h3>
+            <p>lorem ipsummmmm</p>
+            <ul>
+              <li style="--clr-tag: #d3b19a" class="branding">branding</li>
+              <li style="--clr-tag: #70b3b1" class="packaging">packaging</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-inner" style="--clr: #fff">
+            <div class="box">
+              <div class="imgBox">
+                <img src="assets/about/about2.jpg" alt="Tonic" />
+              </div>
+              <div class="icon">
+                <a href="#" class="iconBox">
+                  <span class="material-symbols-outlined"
+                    >arrow_outward</span
+                  ></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="content-about">
+            <h3>building</h3>
+            <p>lorem</p>
+            <ul>
+              <li style="--clr-tag: #d3b19a" class="branding">branding</li>
+              <li style="--clr-tag: #d05fa2" class="marketing">marketing</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-inner" style="--clr: #fff">
+            <div class="box">
+              <div class="imgBox">
+                <img src="assets/about/about3.jpg" alt="Team Lead" />
+              </div>
+              <div class="icon">
+                <a href="#" class="iconBox">
+                  <span class="material-symbols-outlined"
+                    >arrow_outward</span
+                  ></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="content-about">
+            <h3>Sale price</h3>
+            <p>lorem</p>
+            <ul>
+              <li style="--clr-tag: #d3b19a" class="branding">branding</li>
+              <li style="--clr-tag: #70b3b1" class="packaging">packaging</li>
+              <li style="--clr-tag: #d05fa2" class="marketing">marketing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Des Section-->
+    <section class="team-section">
+      <h2>Meet our team</h2>
+      <div class="team-cards" id="teamCards">
+        <!-- Cards will be generated dynamically with JavaScript -->
+      </div>
+      <h2 class="special-thanks">Special Thanks To</h2>
+      <div id="specialCards" class="team-cards"></div>
+    </section>
+
+    <!-- Footer Section-->
+    <section id="footer" class="footer">
+      <footer>
+        <div class="row">
+          <div class="col" id="branch">
+            <p>
+              NYC Property Sales dataset provides comprehensive records of
+              building units sold, including location, type, sale price, and
+              sale date, offering insights into trends and predictions in the
+              New York City real estate market.
+            </p>
+          </div>
+          <div class="col" id="desc">
+            <h3>
+              Lokasi
+              <div class="bottom_line"><span></span></div>
+            </h3>
+            <p>123 Empat Lima Enam</p>
+            <p>Jakarta, POS 000, Indonesia</p>
+            <p class="footer_email">team10.jayapura24@gmail.com</p>
+          </div>
+
+          <div class="col" id="desc">
+            <h3>
+              Berita
+              <div class="bottom_line"><span></span></div>
+            </h3>
+            <form>
+              <ion-icon class="icon" name="mail"></ion-icon>
+              <input
+                type="email"
+                placeholder="Masukin dong emailnya"
+                required
+              />
+              <button type="submit">
+                <ion-icon
+                  class="icon_right"
+                  name="arrow-round-forward"
+                ></ion-icon>
+              </button>
+            </form>
+            <div class="social_icons">
+              <a href="#">
+                <ion-icon class="social_icon" name="logo-github"></ion-icon>
+              </a>
+              <a href="#">
+                <ion-icon class="social_icon" name="mail"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+        <h3>Special thanks to :</h3>
+        <div class="thanks-logo">
+          <a href="https://revou.co/">
+            <img src="assets/revou.webp" class="footer_logo" />
+          </a>
+          <a href="https://kampusmerdeka.kemdikbud.go.id/">
+            <img src="assets/KM.png" class="footer_logo" />
+          </a>
+          <a href="#">
+            <img src="assets/dark logo nyc.png" class="footer_logo" />
+          </a>
+        </div>
+        <hr />
+        <p class="copyright">Team 10 Ⓒ 2024 - All Rights Reserved</p>
+      </footer>
+    </section>
+
+    <!-- script zone-->
+    <script src="./FE/js/index.js"></script>
+    <script src="./FE/js/team.js"></script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+{
+  "totalRevenue": 1000000,
+  "totalBlock": 150,
+  "orderVolume": 3000,
+  "salesReport": {
+    "labels": [
+      "Sep 2016",
+      "Oct 2016",
+      "Nov 2016",
+      "Dec 2016",
+      "Jan 2017",
+      "Feb 2017",
+      "Mar 2017",
+      "Apr 2017",
+      "May 2017",
+      "Jun 2017",
+      "Jul 2017",
+      "Aug 2017"
+    ],
+    "data": [120, 150, 180, 200, 230, 250, 300, 350, 380, 420, 450, 500]
+  },
+  "boroughSalePrice": {
+    "labels": [
+      "Borough 1",
+      "Borough 2",
+      "Borough 3",
+      "Borough 4",
+      "Borough 5",
+      "Borough 6"
+    ],
+    "data": [200000, 150000, 300000, 250000, 400000, 100000]
+  },
+  "topBuildingCategory": {
+    "labels": [
+      "Category 1",
+      "Category 2",
+      "Category 3",
+      "Category 4",
+      "Category 5"
+    ],
+    "data": [50, 40, 30, 20, 10]
+  },
+  "topNeighborhood": {
+    "labels": [
+      "Neighborhood 1",
+      "Neighborhood 2",
+      "Neighborhood 3",
+      "Neighborhood 4",
+      "Neighborhood 5"
+    ],
+    "data": [100, 90, 80, 70, 60]
+  },
+  "priceClassification": {
+    "labels": [
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec",
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug"
+    ],
+    "data": [400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 950]
+  }
+}
