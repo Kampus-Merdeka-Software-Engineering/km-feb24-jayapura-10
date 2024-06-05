@@ -1,54 +1,56 @@
-// Mengatur latar belakang untuk setiap elemen .team-item
-document.querySelectorAll('.team-item').forEach((item, index) => {
-  const background = item.getAttribute('data-background');
-  if (background) {
-    item.style.backgroundImage = `url(${background})`;
-  }
+document.addEventListener("DOMContentLoaded", function() {
+  const teamMembers = [
+    { name: "Gilang Wiko Wicaksono", roles: ["team leader", "Front End"], imageUrl: "./assets/anggota/iko.JPG", link: "#" },
+    { name: "Silvia Putri Anggreani", roles: ["Front End"], imageUrl: "./assets/anggota/silvia_01.jpeg", link: "#" },
+    { name: "Bro Rinal sepuh", roles: ["Front End"], imageUrl: "./assets/anggota/Rinaldi.webp", link: "#" },
+    { name: "Riska", roles: ["Front End"], imageUrl: "./assets/anggota/Riskamawarni_Laia.jpg", link: "#" },
+    // { name: "hantu", roles: ["⭐"], imageUrl: "./assets/anggota/huahaha.jpg", link: "#" },
+    { name: "Fajar", roles: ["deployment"], imageUrl: "./assets/anggota/fajar.jpg", link: "#" },
+    { name: "Arum", roles: ["deployment"], imageUrl: "./assets/anggota/rum.jpg", link: "#" },
+    { name: "Lilis Surwangi", roles: ["Pitch Deck"], imageUrl: "./assets/anggota/Lilis_Surwangi.webp", link: "#" },
+    { name: "Ririn", roles: ["Pitch Deck"], imageUrl: "./assets/anggota/Ririn_cute.webp", link: "#" },
+    { name: "Syifa Aulia Zahra", roles: ["Pitch Deck"], imageUrl: "./assets/anggota/Syifa_Auliya_Zahra.webp", link: "#" },
+    { name: "Dyah Ayu Pitaloka", roles: ["Pitch Deck"], imageUrl: "./assets/anggota/dyah.webp", link: "#" },
+    { name: "Putri Nadia N", roles: ["Pitch Deck"], imageUrl: "./assets/anggota/Putri_Nadia_N.webp", link: "#" },
+    { name: "Dziahulhaj Fadhil", roles: ["Pitch Deck"], imageUrl: "./assets/anggota/Dziaulhaj.webp", link: "#" },
+    // Tambahkan data anggota tim lainnya sesuai kebutuhan
+  ];
 
-  const fourthItem = document.querySelector('.team-item:nth-child(4)');
-  if (fourthItem) {
-    fourthItem.style.backgroundPosition = '50% 55%';
-  }
+  const specialMembers = [
+    { name: "Kak Aul", roles: ["Mentor SE"], imageUrl: "./assets/anggota/kak_aul.webp", link: "#" },
+    { name: "Kak inaa", roles: ["Mentor DA"], imageUrl: "./assets/anggota/kak_ina.webp", link: "#" }
+  ];
 
-});
+  const teamCardsContainer = document.getElementById("teamCards");
+  const specialCardsContainer = document.getElementById("specialCards");
 
-// Mengatur event listener untuk tombol next dan prev
-let next = document.querySelector('.next');
-let prev = document.querySelector('.prev');
+  const createCard = (member) => {
+    const card = document.createElement("div");
+    card.classList.add("team-card");
 
-next.addEventListener('click', function () {
-  slideNext();
-});
+    const roles = member.roles.map(role => `<span class="role-label ${role.toLowerCase().replace(' ', '-')}">${role}</span>`).join(", "); //ini beda dari yang aslinya
 
-prev.addEventListener('click', function () {
-  slidePrev();
-});
+    card.innerHTML = `
+      <img src="${member.imageUrl}" alt="${member.name}">
+      <div class="team-card-info">
+        <h3>${member.name}</h3>
+        <span>${roles}</span>
+      </div>
+    `;
 
-document.addEventListener('keydown', function (event) {
-  if (event.key === "ArrowRight") {
-    slideNext();
-  } else if (event.key === "ArrowLeft") {
-    slidePrev();
-  }
-});
+    card.addEventListener("click", function() {
+      window.location.href = member.link;
+    });
+    return card;
+  };
 
-function slideNext() {
-  let items = document.querySelectorAll('.team-item');
-  document.querySelector('.team-slide').appendChild(items[0]);
-}
+  // Menambahkan card untuk anggota tim biasa
+  teamMembers.forEach(member => {
+    teamCardsContainer.appendChild(createCard(member));
+  });
 
-function slidePrev() {
-  let items = document.querySelectorAll('.team-item');
-  document.querySelector('.team-slide').prepend(items[items.length - 1]);
-}
-
-// Menunda pemuatan skrip tambahan hingga diperlukan
-window.addEventListener('load', function () {
-  // Memuat skrip tambahan hanya saat tombol next atau prev di-klik
-  next.addEventListener('click', loadAdditionalScripts);
-  prev.addEventListener('click', loadAdditionalScripts);
-
-  function loadAdditionalScripts() {
-    // Tuliskan kode yang memuat skrip tambahan di sini
-  }
+  // Menambahkan card untuk anggota tim istimewa
+  specialMembers.forEach(member => {
+    specialCardsContainer.appendChild(createCard(member));
+  });
 });
