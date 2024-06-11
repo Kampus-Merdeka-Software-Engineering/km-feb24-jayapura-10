@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Laporan Data Analisis</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Baris Pertama: Filter dan Tombol Filter -->
+      <div class="row">
+        <div class="headerSec">
+          <a href="/index.html" class="navHead">
+            <img src="../assets/dark logo nyc.png" alt="logo" class="pic" />
+          </a>
+          <h1>DASHBOARD TEAM 10 JAYAPURA 24</h1>
+          <a href="/index.html" class="navHead">
+            <img src="../assets/Team_10.webp" alt="logo" class="pic" />
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="filter">
+          <label for="category">Building Category:</label>
+          <select id="category" multiple>
+            <option value="">ALL</option>
+            <option value="01 ONE FAMILY DWELLINGS">
+              01 ONE FAMILY DWELLINGS
+            </option>
+            <option value="02 TWO FAMILY DWELLINGS">
+              02 TWO FAMILY DWELLINGS
+            </option>
+            <option
+              value="03 THREE FAMILY DWELLINGS
+            "
+            >
+              03 THREE FAMILY DWELLINGS
+            </option>
+            <option
+              value="04 TAX CLASS 1 CONDOS
+            "
+            >
+              05 TAX CLASS 1 VACANT LAND
+            </option>
+            <option
+              value="05 TAX CLASS 1 VACANT LAND
+            "
+            >
+              04
+            </option>
+            <option
+              value="05 TAX CLASS 1 VACANT LAND
+            "
+            >
+              05 TAX CLASS 1 VACANT LAND
+            </option>
+            <option
+              value="06 TAX CLASS 1 - OTHER
+            "
+            >
+              06 TAX CLASS 1 - OTHER
+            </option>
+            <option
+              value="07 RENTALS - WALKUP APARTMENTS
+            "
+            >
+              07 RENTALS - WALKUP APARTMENTS
+            </option>
+            <option
+              value="08 RENTALS - ELEVATOR APARTMENTS
+            "
+            >
+              08 RENTALS - ELEVATOR APARTMENTS
+            </option>
+            <option
+              value="09 COOPS - WALKUP APARTMENTS
+            "
+            >
+              09 COOPS - WALKUP APARTMENTS
+            </option>
+            <option
+              value="10 COOPS - ELEVATOR APARTMENTS
+            "
+            >
+              10 COOPS - ELEVATOR APARTMENTS
+            </option>
+            <option
+              value="11A CONDO-RENTALS
+            "
+            >
+              11A CONDO-RENTALS
+            </option>
+            <option
+              value="12 CONDOS - WALKUP APARTMENTS
+            "
+            >
+              12 CONDOS - WALKUP APARTMENTS
+            </option>
+            <option
+              value="13 CONDOS - ELEVATOR APARTMENTS
+            "
+            >
+              13 CONDOS - ELEVATOR APARTMENTS
+            </option>
+            <option
+              value="14 RENTALS - 4-10 UNIT
+            "
+            >
+              14 RENTALS - 4-10 UNIT
+            </option>
+            <option
+              value="15 CONDOS - 2-10 UNIT RESIDENTIAL
+            "
+            >
+              15 CONDOS - 2-10 UNIT RESIDENTIAL
+            </option>
+            <option
+              value="16 CONDOS - 2-10 UNIT WITH COMMERCIAL UNIT
+            "
+            >
+              16 CONDOS - 2-10 UNIT WITH COMMERCIAL UNIT
+            </option>
+            <option
+              value="17 CONDO COOPS
+            "
+            >
+              17 CONDO COOPS
+            </option>
+            <option
+              value="21 OFFICE BUILDINGS
+            "
+            >
+              21 OFFICE BUILDINGS
+            </option>
+            <option
+              value="22 STORE BUILDINGS
+            "
+            >
+              22 STORE BUILDINGS
+            </option>
+            <option
+              value="23 LOFT BUILDINGS
+            "
+            >
+              23 LOFT BUILDINGS
+            </option>
+            <option
+              value="25 LUXURY HOTELS
+            "
+            >
+              25 LUXURY HOTELS
+            </option>
+            <option
+              value="26 OTHER HOTELS
+            "
+            >
+              26 OTHER HOTELS
+            </option>
+            <option
+              value="27 FACTORIES
+            "
+            >
+              27 FACTORIES
+            </option>
+            <option
+              value="28 COMMERCIAL CONDOS
+            "
+            >
+              28 COMMERCIAL CONDOS
+            </option>
+            <option
+              value="29 COMMERCIAL GARAGES
+            "
+            >
+              29 COMMERCIAL GARAGES
+            </option>
+            <option
+              value="30 WAREHOUSES
+            "
+            >
+              30 WAREHOUSES
+            </option>
+            <option
+              value="31 COMMERCIAL VACANT LAND
+            "
+            >
+              31 COMMERCIAL VACANT LAND
+            </option>
+            <option
+              value="32 HOSPITAL AND HEALTH FACILITIES
+            "
+            >
+              32 HOSPITAL AND HEALTH FACILITIES
+            </option>
+            <option
+              value="33 EDUCATIONAL FACILITIES
+            "
+            >
+              33 EDUCATIONAL FACILITIES
+            </option>
+            <option
+              value="35 INDOOR PUBLIC AND CULTURAL FACILITIES
+            "
+            >
+              35 INDOOR PUBLIC AND CULTURAL FACILITIES
+            </option>
+            <option
+              value="36 OUTDOOR RECREATIONAL FACILITIES
+            "
+            >
+              36 OUTDOOR RECREATIONAL FACILITIES
+            </option>
+            <option
+              value="37 RELIGIOUS FACILITIES
+            "
+            >
+              37 RELIGIOUS FACILITIES
+            </option>
+            <option
+              value="38 ASYLUMS AND HOMES
+            "
+            >
+              38 ASYLUMS AND HOMES
+            </option>
+            <option
+              value="40 SELECTED GOVERNMENTAL FACILITIES
+            "
+            >
+              40 SELECTED GOVERNMENTAL FACILITIES
+            </option>
+            <option
+              value="41 TAX CLASS 4 - OTHER
+            "
+            >
+              41 TAX CLASS 4 - OTHER
+            </option>
+            <option
+              value="42 CONDO CULTURAL/MEDICAL/EDUCATIONAL/ETC
+            "
+            >
+              42 CONDO CULTURAL/MEDICAL/EDUCATIONAL/ETC
+            </option>
+            <option
+              value="43 CONDO OFFICE BUILDINGS
+            "
+            >
+              43 CONDO OFFICE BUILDINGS
+            </option>
+            <option
+              value="44 CONDO PARKING
+            "
+            >
+              44 CONDO PARKING
+            </option>
+            <option
+              value="45 CONDO HOTELS
+            "
+            >
+              45 CONDO HOTELS
+            </option>
+            <option
+              value="46 CONDO STORE BUILDINGS
+            "
+            >
+              46 CONDO STORE BUILDINGS
+            </option>
+            <option
+              value="47 CONDO NON-BUSINESS STORAGE
+            "
+            >
+              47 CONDO NON-BUSINESS STORAGE
+            </option>
+            <option
+              value="48 CONDO TERRACES/GARDENS/CABANAS
+            "
+            >
+              48 CONDO TERRACES/GARDENS/CABANAS
+            </option>
+            <option
+              value="49 CONDO WAREHOUSES/FACTORY/INDUS
+            "
+            >
+              49 CONDO WAREHOUSES/FACTORY/INDUS
+            </option>
+          </select>
+        </div>
+        <div class="filter">
+          <label for="date-start">Start Date:</label>
+          <input type="date" id="date-start" value="2016-09-01" />
+          <label for="date-end">End Date:</label>
+          <input type="date" id="date-end" value="2017-08-31" />
+        </div>
+        <div class="filter">
+          <label for="borough">Borough:</label>
+          <select id="borough">
+            <option value="">All</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+        <div class="filter" id="btn-filter">
+          <button id="filter-button" class="custom-btn btn-filter">
+            <span>FILTER</span>
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="score-card">
+          <div class="score-card-logo">
+            <img src="/assets/icon/money.png" alt="Revenue" width="28" />
+            <h3>Total Revenue</h3>
+          </div>
+          <div class="value" id="total-revenue">$0</div>
+        </div>
+        <div class="score-card">
+          <div class="score-card-logo">
+            <img src="/assets/icon/block.png" alt="Block" width="28" />
+            <h3>Total Block</h3>
+          </div>
+          <div class="value" id="total-block">0</div>
+        </div>
+        <div class="score-card">
+          <div class="score-card-logo">
+            <img src="/assets/icon/order.png" alt="Order Volume" width="28" />
+            <h3>Order Volume</h3>
+          </div>
+          <div class="value" id="order-volume">0</div>
+        </div>
+      </div>
+      <!-- Baris Kedua: Line Chart dan Bar Chart Vertikal -->
+      <div class="row">
+        <div class="chart-container" id="salesReport">
+          <canvas id="line-chart" class="salesReport"></canvas>
+        </div>
+      </div>
+      <div class="row">
+        <!-- borough by sale price-->
+        <div class="chart-container">
+          <canvas id="bar-chart-vertical"></canvas>
+        </div>
+        <!-- Top 5 neighbourhood-->
+        <div class="chart-container">
+          <canvas id="bar-chart-horizontal"></canvas>
+        </div>
+      </div>
+      <div cclass="row"></div>
+      <!-- Baris Ketiga: Bar Chart Horizontal 1 dan Bar Chart Horizontal 2 -->
+      <div class="row">
+        <div class="chart-container">
+          <canvas id="bar-chart-horizontal-1"></canvas>
+        </div>
+        <div id="scatter-container" class="chart-container">
+          <canvas id="bar-chart-horizontal-2"></canvas>
+        </div>
+      </div>
+      <!-- Baris Keempat: Pie Chart dan Line Chart 2 -->
+      <div class="row">
+        <div class="chart-container">
+          <canvas id="pie-chart"></canvas>
+        </div>
+        <div class="chart-container">
+          <canvas id="line-chart-2"></canvas>
+        </div>
+      </div>
+      <div class="container-2">
+        <!-- <div class="search-container"> -->
+        <input type="text" id="search" placeholder="Search..." />
+        <!-- </div> x-->
+        <table id="data-table">
+          <thead>
+            <tr>
+              <th>BOROUGH</th>
+              <th>NEIGHBORHOOD</th>
+              <th>BUILDING CATEGORY</th>
+              <th>Total Unit</th>
+              <th>Year Built</th>
+              <th>Tax</th>
+              <th>Sale Price</th>
+              <th>Sale Date</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <div id="pagination"></div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

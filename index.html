@@ -3,23 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="NYC dashboard report by team 10 jayapura"
+    />
     <title>TEAM 10 JAYAPURA 24</title>
     <link rel="stylesheet" href="FE/css/index.css" />
+    <script src="/FE/js/lazy.js"></script>
     <link rel="stylesheet" href="FE/css/home.css" />
     <link rel="stylesheet" href="FE/css/team.css" />
     <link rel="stylesheet" href="FE/css/about.css" />
-    <link rel="stylesheet" href="FE/css/feedback.css" />
-
+    <link rel="stylesheet" href="FeedBack/fb.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
-      rel="stylesheet"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      />
+    </noscript>
 
     <link
       rel="icon"
       href="assets/revou.webp"
       type="image/x-icon"
       sizes="128x128"
+    />
+    <link
+      rel="preload"
+      href="https://i.ibb.co.com/ccTfnrL/NYC-01after.webp"
+      as="image"
+      loading="lazy"
     />
   </head>
 
@@ -39,25 +59,29 @@
           </li>
           <li><a href="#about" class="#">About</a></li>
           <li><a href="#team" class="#">Team</a></li>
-          <li><a href="#feedback" class="#">feedback</a></li>
         </ul>
+        <div class="burger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
     </nav>
     <!-- home section-->
-    <section id="home" class="home" data-parallax>
+    <section id="home" class="home">
       <div class="home-content">
-        <h4>Hey there, this is website about</h4>
         <h1>NYC Property Sales</h1>
-        <h4>- by team 10 Jayapura</h4>
+
         <p>
           Ini adalah penjelasan singkat tentang sesuatu yang sangat menarik dan
           penting. Ini adalah penjelasan singkat tentang sesuatu yang sangat
           menarik dan penting. Ini adalah penjelasan singkat tentang sesuatu
           yang sangat menarik dan penting.
         </p>
-        <button id="button-home">Get in Touch</button>
+        <button id="button-home" class="bounce">Get in Touch</button>
       </div>
     </section>
+
     <!--  About Section-->
     <section id="about" class="about">
       <div class="container">
@@ -65,28 +89,26 @@
           <div class="card-inner" style="--clr: #fff">
             <div class="box">
               <div class="imgBox">
-                <img src="assets/about/about1.jpg" alt="about-01" />
+                <img src="assets/about/about1.webp" alt="about-01" />
               </div>
               <div class="icon">
-                <a href="./article/article.html" class="iconBox">
-                  <span class="material-symbols-outlined"
-                    >arrow_outward</span
-                  ></a
-                >
+                <a href="./articles/article_1/article.html" class="iconBox">
+                  <span class="material-symbols-outlined">arrow_outward</span>
+                </a>
               </div>
             </div>
           </div>
           <div class="content-about">
-            <h3>Borough</h3>
+            <h1>Borough</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Aspernatur omnis ducimus quam expedita doloremque, recusandae
-              odit, nulla perferendis nobis aut esse. Eligendi distinctio
-              impedit aspernatur explicabo error recusandae repellendus fugit!
+              Tren Penjualan Properti di New York City Berdasarkan Borough:
+              Analisis dan Faktor-Faktor yang Mempengaruhi Pasar real estate di
+              New York City (NYC) selalu menjadi sorotan, dengan variasi harga
+              yang mencerminkan dinamika ekonomi dan sosial di setiap borough.
             </p>
             <ul>
-              <li style="--clr-tag: #d3b19a" class="branding">branding</li>
-              <li style="--clr-tag: #70b3b1" class="packaging">packaging</li>
+              <li style="--clr-tag: #d3b19a" class="branding">Borough</li>
+              <li style="--clr-tag: #70b3b1" class="packaging">NYC</li>
             </ul>
           </div>
         </div>
@@ -95,10 +117,14 @@
           <div class="card-inner" style="--clr: #fff">
             <div class="box">
               <div class="imgBox">
-                <img src="assets/about/about2.jpg" alt="about-02" />
+                <img
+                  src="assets/about/about2.webp"
+                  alt="about-02"
+                  loading="lazy"
+                />
               </div>
               <div class="icon">
-                <a href="#" class="iconBox">
+                <a href="./articles/article_2/article.html" class="iconBox">
                   <span class="material-symbols-outlined"
                     >arrow_outward</span
                   ></a
@@ -107,16 +133,15 @@
             </div>
           </div>
           <div class="content-about">
-            <h3>building</h3>
+            <h1>New York City</h1>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam
-              quae, ullam consequatur cumque nam voluptatibus minus inventore
-              modi totam doloribus delectus veritatis quasi, quo perspiciatis
-              fugit, doloremque sit earum velit?
+              New York City (NYC) adalah salah satu kota paling ikonik di dunia,
+              terkenal dengan cakrawala yang menakjubkan, kehidupan budaya yang
+              dinamis, dan pasar real estate yang sangat kompetitif.
             </p>
             <ul>
-              <li style="--clr-tag: #d3b19a" class="branding">branding</li>
-              <li style="--clr-tag: #d05fa2" class="marketing">marketing</li>
+              <li style="--clr-tag: #d3b19a" class="branding">Building</li>
+              <li style="--clr-tag: #1ee6aa" class="marketing">NYC</li>
             </ul>
           </div>
         </div>
@@ -125,10 +150,14 @@
           <div class="card-inner" style="--clr: #fff">
             <div class="box">
               <div class="imgBox">
-                <img src="assets/about/about3.jpg" alt="about-03" />
+                <img
+                  src="assets/about/about3.webp"
+                  alt="about-03"
+                  loading="lazy"
+                />
               </div>
               <div class="icon">
-                <a href="#" class="iconBox">
+                <a href="./articles/article_3/article.html" class="iconBox">
                   <span class="material-symbols-outlined"
                     >arrow_outward</span
                   ></a
@@ -137,17 +166,18 @@
             </div>
           </div>
           <div class="content-about">
-            <h3>Sale price</h3>
+            <h1>Building Class Category</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-              provident perferendis mollitia ab natus consequatur suscipit fuga
-              facere dolor maxime sapiente maiores, voluptatum obcaecati
-              laborum, sed et eligendi ex placeat.
+              Pasar real estate di New York City (NYC) menawarkan wawasan yang
+              mendalam mengenai tren kategori kelas bangunan. Berdasarkan data
+              penjualan properti selama satu tahun, artikel ini akan
+              mengeksplorasi lima kategori kelas bangunan teratas berdasarkan
+              harga jual, serta faktor-faktor yang mempengaruhi tren ini.
             </p>
             <ul>
-              <li style="--clr-tag: #d3b19a" class="branding">branding</li>
-              <li style="--clr-tag: #70b3b1" class="packaging">packaging</li>
-              <li style="--clr-tag: #d05fa2" class="marketing">marketing</li>
+              <li style="--clr-tag: #d3b19a" class="branding">Sale Price</li>
+              <li style="--clr-tag: #70b3b1" class="packaging">Revenue</li>
+              <li style="--clr-tag: #1ee6aa" class="marketing">NYC</li>
             </ul>
           </div>
         </div>
@@ -168,6 +198,7 @@
     <section id="footer" class="footer">
       <footer>
         <div class="row">
+          <!-- Informasi -->
           <div class="col" id="branch">
             <p>
               NYC Property Sales dataset provides comprehensive records of
@@ -176,6 +207,7 @@
               New York City real estate market.
             </p>
           </div>
+          <!-- Lokasi -->
           <div class="col" id="desc">
             <h3>
               Lokasi
@@ -185,7 +217,7 @@
             <p>Jakarta, POS 000, Indonesia</p>
             <p class="footer_email">team10.jayapura24@gmail.com</p>
           </div>
-
+          <!-- Follow Us -->
           <div class="col" id="desc">
             <h3>
               Follow Us!
@@ -198,6 +230,7 @@
                   src="/assets/icon/github.png"
                   alt="github"
                   class="follow_us"
+                  loading="lazy"
                 />
               </a>
               <a href="#">
@@ -205,6 +238,7 @@
                   src="/assets/icon/gmail.png"
                   alt="gmail"
                   class="follow_us"
+                  loading="lazy"
                 />
               </a>
             </div>
@@ -217,6 +251,7 @@
               src="assets/revou.webp"
               class="footer_logo"
               alt="revoou-logo"
+              loading="lazy"
             />
           </a>
           <a href="https://kampusmerdeka.kemdikbud.go.id/">
@@ -224,6 +259,7 @@
               src="assets/KM.png"
               class="footer_logo"
               alt="KampusMerdeka-logo"
+              loading="lazy"
             />
           </a>
           <a href="#">
@@ -231,6 +267,7 @@
               src="assets/dark logo nyc.png"
               class="footer_logo"
               alt="NYC-logo"
+              loading="lazy"
             />
           </a>
         </div>
@@ -239,8 +276,93 @@
       </footer>
     </section>
 
+    <!--button sticky-->
+    <div class="button-container">
+      <div class="chat-bubble" id="chatBubble">Send Feedback Please 😔</div>
+      <button
+        class="button-feedback"
+        data-toggle="modal"
+        data-whatever="your feedback"
+      >
+        +
+      </button>
+    </div>
+
+    <div
+      class="modal"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- <h1 class="modal-title fs-5" id="exampleModalLabel"></h1> -->
+            <button
+              type="button"
+              class="btn-close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              &times;
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-logo">
+              <img
+                src="assets/Team_10.webp"
+                alt="Logo"
+                class="logo"
+                loading="lazy"
+              />
+            </div>
+            <h2 class="modal-title">Feedback Us</h2>
+            <form class="form-body">
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label"
+                  >For Us:</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="recipient-name"
+                  readonly
+                />
+              </div>
+              <div class="mb-3">
+                <label for="Email-name-sander" class="col-form-label"
+                  >From:</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="Email-name-sander"
+                  placeholder="enter ur name🐣"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label"
+                  >Your Message:</label
+                >
+                <textarea
+                  class="form-control"
+                  id="message-text"
+                  required
+                ></textarea>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- script zone-->
     <script src="./FE/js/index.js"></script>
     <script src="./FE/js/team.js"></script>
+    <script src="./FE/js/feedback.js"></script>
   </body>
 </html>

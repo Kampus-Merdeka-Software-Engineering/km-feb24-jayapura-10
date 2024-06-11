@@ -1,0 +1,106 @@
+
+/* Button */
+.btn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: #e9ecef;
+  background-color: transparent;
+  border: solid #137aaa;
+  border-radius: 2.2rem;
+  cursor: pointer;
+  text-align: center;
+  margin: 1rem;
+}
+
+.btn:hover {
+  background-color: #1f1f1f;
+  color: #e9ecef;
+  border: none;
+}
+
+button[type="submit"].btn:hover {
+  background-color: #6e6d6d;
+}
+
+/* Input dan textarea */
+input,
+textarea {
+  background-color: transparent;
+  margin-top: 5px;
+  border: 1px solid #6e6d6d;
+  border-radius: 0.5rem;
+  height: 40px;
+  color: #e9ecef;
+  text-align: start;
+  padding: 2px 5px;
+}
+
+label {
+  margin-top: 15px;
+  color: #e8e4de;
+}
+
+label,
+input,
+textarea {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1050;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.58);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-dialog {
+  background-color: #1f1f1fe4;
+  border: 3px solid #1f1f1f;
+  border-radius: 1rem;
+  max-width: 480px;
+  width: 100%;
+  margin: 1.75rem auto;
+  padding: 1.2rem;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem;
+  border-bottom: 1px solid #6e6d6d;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.modal-title {
+  margin: 0;
+}
+
+.btn-close {
+  width: 1rem;
+  background: none;
+  border: none;
+  color: #137aaa;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.btn-close:hover {
+  color: #6e6d6d;
+}
+

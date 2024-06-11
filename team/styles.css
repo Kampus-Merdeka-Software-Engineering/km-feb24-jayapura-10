@@ -1,0 +1,191 @@
+.team-section {
+  text-align: center;
+  margin-bottom: 30px; /* Berikan jarak antara judul dan card */
+  background-color: #1f1f1f; /* Warna gelap yang mewah */
+  padding: 50px 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* h2 styling yah*/
+.team-section h2 {
+  color: white;
+  width: 80%;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.team-section h2::before,
+.team-section h2::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: white;
+  margin: 0 20px;
+}
+
+.special-thanks {
+  margin-top: 50px; /* Jarak lebih besar ke bagian atas */
+  margin-bottom: 20px; /* Jarak lebih kecil ke bagian bawah */
+  width: 100%; /* Lebar 100% */
+  text-align: center; /* Tetapkan teks ke tengah */
+  position: relative;
+}
+
+.special-thanks::before,
+.special-thanks::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: white;
+  margin: 0 20px;
+}
+.team-section h2:hover {
+  color: #88bde6;
+}
+
+/* special carddd*/
+.special-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* team carddd */
+.team-card {
+  width: 200px;
+  background-color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s, filter 0.3s;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.team-card:hover {
+  transform: scale(1.09);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+  filter: brightness(120%);
+  background-color: #007bff; /* Warna biru saat dihover */
+}
+
+.team-card:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%; /* Besarkan garis */
+  height: 150%; /* Besarkan garis */
+  border: 10px solid rgba(255, 215, 0, 0.5); /* Warna emas samar-samar */
+  pointer-events: none;
+  animation: shimmer 2s infinite linear;
+  transform: rotate(
+    45deg
+  ); /* Ubah arah garis menjadi dari kiri bawah ke kanan atas */
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translate(-50%, 50%) rotate(45deg); /* Atur posisi awal */
+  }
+  100% {
+    transform: translate(50%, -50%) rotate(45deg); /* Atur posisi akhir */
+  }
+}
+
+.team-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.team-card-info {
+  padding: 15px;
+}
+
+.team-card-info h3 {
+  margin: 0;
+  color: #fff;
+  font-size: 16px;
+}
+
+.team-card-info p {
+  margin: 5px 0 0;
+  color: #ccc;
+  font-size: 14px;
+}
+
+.team-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 2%;
+}
+
+.team-card {
+  width: calc(
+    16.666% - 20px
+  ); /* Atur lebar card untuk 6 card dalam satu baris */
+  margin: 10px; /* Berikan jarak antar card */
+}
+
+@media screen and (max-width: 767px) {
+  .team-card {
+    width: calc(
+      33.333% - 20px
+    ); /* Atur lebar card lebih kecil untuk layar yang lebih kecil */
+  }
+}
+
+/* atur toogle untuk role*/
+.role-label {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.mentor-da {
+  background-color: red;
+  color: white;
+}
+.mentor-se {
+  background-color: rgb(231, 49, 171);
+  color: white;
+}
+
+.team-leader {
+  background-color: rgb(230, 41, 214);
+  color: white;
+}
+
+.front-end {
+  background-color: yellow;
+  color: black;
+}
+
+.pitch-deck {
+  background-color: green;
+  color: white;
+}
+
+.quality-a {
+  background-color: orange;
+  color: black;
+}
+
+.deployment {
+  background-color: rgb(70, 223, 223);
+  color: white;
+}
+
+img {
+  max-width: 100%;
+  height: 215px;
+}

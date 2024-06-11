@@ -1,0 +1,234 @@
+body {
+  background-color: #2c2c2c;
+  color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+.container {
+  padding: 20px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.headerSec {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  background-color: #8f9092;
+  background-image: url("/assets/anggota/silvia_01.webp");
+  padding: 5px;
+  border-radius: 8px;
+  flex-grow: 1;
+}
+.pic {
+  max-width: 100%;
+  max-height: 80px;
+}
+
+.filter,
+.score-card {
+  background-color: #3a3a3a;
+  padding: 15px;
+  border-radius: 8px;
+  margin-right: 10px;
+  flex-grow: 1;
+}
+.filter select,
+.filter input,
+.filter button {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2c2c2c;
+  color: #f0f0f0;
+  margin-top: 5px;
+}
+
+/* button style */
+#btn-filter {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.custom-btn {
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+.btn-filter {
+  border: none;
+  color: #000;
+}
+
+.btn-filter:hover {
+  color: #f7f7f7;
+  background-color: #80b8f5;
+  box-shadow: -7px -7px 60px 0px rgba(109, 163, 243, 0.6),
+    -4px -4px 5px 0px rgba(231, 105, 105, 0.4),
+    7px 7px 20px 0px rgba(40, 230, 135, 0.133),
+    4px 4px 5px 0px rgba(204, 18, 18, 0.167);
+  transition: all 0.7s ease;
+}
+.btn-filter:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+.btn-filter:active {
+  top: 3px;
+}
+
+.score-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.score-card h3 {
+  margin: 0;
+}
+.score-card .value {
+  font-size: 24px;
+}
+.chart-container {
+  background-color: #3a3a3a;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  flex-grow: 1;
+  max-width: 50%;
+}
+
+.score-card-logo {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+}
+
+canvas {
+  background-color: #3a3a3a;
+}
+#salesReport {
+  max-width: 100%;
+}
+.salesReport {
+  max-width: 100%;
+  max-height: 350px;
+}
+
+#pie-chart {
+  max-height: 300px;
+  max-width: 500px;
+}
+
+.container-2 {
+  max-width: 100%;
+}
+
+#search {
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 10%;
+  box-sizing: border-box;
+  border-radius: 10%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  color: #3a3a3a; /* Table text color */
+  background-color: #ffffffd5;
+}
+
+th,
+td {
+  border: 1px solid #000000;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+#pagination {
+  text-align: center;
+}
+
+.pagination-button {
+  padding: 8px 16px;
+  margin: 0 4px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.pagination-button.active {
+  color: #d577e7;
+}
+
+.pagination-button:hover:not(.active) {
+  color: #80b8f5;
+}
+
+.pagination-arrow {
+  padding: 8px 12px;
+  margin: 0 4px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #007bff;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.pagination-arrow:hover {
+  color: #80b8f5;
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+  .chart-container {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  th,
+  td {
+    min-width: 100px;
+    max-width: none;
+  }
+}
+@media (max-width: 768px) {
+  #scatter-container {
+    width: 100%;
+    height: 400px;
+    padding: 0;
+  }
+}

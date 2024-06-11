@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback</title>
+    <link rel="stylesheet" href="/FeedBack/fb.css" />
+  </head>
+  <body>
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-toggle="modal"
+      data-target="#exampleModal"
+      data-whatever="Jayapura Team 10"
+    >
+      Feedback Us🤗
+    </button>
+
+    <div
+      class="modal"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              &times;
+            </button>
+          </div>
+          
+          <div class="modal-body">
+            <form class="form-body">
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label"
+                  >For Us :</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="recipient-name"
+                  readonly
+                />
+              </div>
+              <div class="mb-3">
+                <label for="Email-name-sander" class="col-form-label"
+                  >From :</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="Email-name-sander"
+                  placeholder="your email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label"
+                  >Your Message:</label
+                >
+                <textarea
+                  class="form-control"
+                  id="message-text"
+                  required
+                ></textarea>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/FeedBack/fb.js"></script>
+  </body>
+</html>
+
