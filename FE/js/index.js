@@ -54,10 +54,10 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   
   
-document.addEventListener('DOMContentLoaded', () => {
-  const button = document.getElementById('button-home');
-  button.addEventListener('click', () => {
-      window.location.href = './dashboard/dashboard.html';  // Ganti dengan tautan yang diinginkan
+  document.addEventListener('DOMContentLoaded', () => {
+    const button = document.getElementById('button-home');
+    button.addEventListener('click', (event) => {
+        event.preventDefault();  // Prevents the default action
+        window.location.href = './dashboard/dashboard.html';  // Change to your desired link
+    });
   });
-});
-  

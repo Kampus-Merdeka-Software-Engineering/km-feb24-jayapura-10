@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "chartjs-plugin-datalabels": "^2.2.0",
     "emailjs-com": "^3.2.0"
   }
 }
