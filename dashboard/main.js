@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                         weight: 'bold'
                                     }
                                 }, ticks:{
-                                    color:'#fff',
+                                    color:'#333',
                                     beginAtZero: true
 
                                 }
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                         weight: 'bold'
                                     }
                                 }, ticks:{
-                                    color:'#fff',
+                                    color:'#333',
                                     beginAtZero: true
 
                                 }
@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         plugins: {
                             legend: {
                                 labels: {
-                                    color: '#fff'
+                                    color: '#333'
                                 }
                             }
                         },
@@ -181,7 +181,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             y: {
                                 beginAtZero: true,
                                 ticks:{
-                                    color:'#fff',
+                                    color:'#333',
                                     beginAtZero: true,
                                     
                                 callback: function(value, index, values) {
@@ -194,7 +194,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             x: {
                             beginAtZero: true,
                                 ticks:{
-                                    color:'#fff',
+                                    color:'#333',
                                     beginAtZero: true
 
                                 }
@@ -234,7 +234,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             x: {
                                 beginAtZero: true,
                                 ticks: {
-                                    color: '#fff', // Warna putih untuk sumbu X
+                                    color: '#333', // Warna putih untuk sumbu X
                                     beginAtZero: true,
                                     callback: function(value, index, values) {
                                         // Lakukan singkatan nilai di sini
@@ -244,7 +244,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             },
                             y: {
                                 ticks: {
-                                    color: '#fff' // Warna putih untuk sumbu Y
+                                    color: '#333' // Warna putih untuk sumbu Y
                                 }
                             }
                         }
@@ -330,7 +330,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             x: {
                                 beginAtZero: true,
                                 ticks: {
-                                    color: '#fff', // Warna putih untuk sumbu X
+                                    color: '#333', // Warna putih untuk sumbu X
                                     callback: function(value, index, values) {
                                         // Lakukan singkatan nilai di sini
                                         return abbreviateNumber(value);
@@ -339,7 +339,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             },
                             y: {
                                 ticks: {
-                                    color: '#fff' // Warna putih untuk sumbu Y
+                                    color: '#333' // Warna putih untuk sumbu Y
                                 }
                             }
                         }
@@ -446,7 +446,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                     }
                                 },
                                 ticks: {
-                                    color: '#fff',
+                                    color: '#333',
                                     beginAtZero: true
                                 }
                             },
@@ -461,7 +461,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                     }
                                 },
                                 ticks: {
-                                    color: '#fff',
+                                    color: '#333',
                                     beginAtZero: true,
                                     callback: function(value, index, values) {
                                         return abbreviateNumber(value);
@@ -496,7 +496,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
                 //! pie chart
-                
                 const boroughCounts = filteredData.reduce((acc, curr) => {
                     const borough = curr.BOROUGH;
                     if (!acc[borough]) {
@@ -511,12 +510,12 @@ document.addEventListener('DOMContentLoaded', function () {
                   
                   const total = boroughData.reduce((a, b) => a + b, 0);
                   
-                  //pie chart
+                  // Pie chart
                   const pieChartData = {
-                    labels: boroughLabels,
+                    labels: boroughLabels.map((label, index) => `Borough ${label}`),
                     datasets: [{
                       label: 'Borough Distribution',
-                      data: boroughData.map(count => (count / total) * 100),
+                      data: boroughData,
                       backgroundColor: [
                         'rgba(255, 99, 132, 0.2)',
                         'rgba(54, 162, 235, 0.2)',
@@ -543,24 +542,39 @@ document.addEventListener('DOMContentLoaded', function () {
                     type: 'pie',
                     data: pieChartData,
                     options: {
-                      scales: {
-                        y: {
-                          beginAtZero: true
-                        }
-                      },
-                      plugins: {
-                        datalabels: {
-                          formatter: (value, ctx) => {
-                            return `${value.toFixed(2)}%`;
+                        responsive : true,
+                        maintainAspectRatio : false,
+                        plugins: {
+                        title: {
+                            display: true,
+                                    text: 'Sales Distribution by Borough',
+                                    color: '#333',
+                                    font: {
+                                        size: 16,
+                                        weight: 'bolder'
+                                    }
                           },
-                          color: 'white',
-                          font: {
-                            size: 12
+                        legend: {
+                          display: true,
+                          position: 'right'
+                        },
+                        tooltip: {
+                          enabled: true,
+                          callbacks: {
+                            label: function(context) {
+                              let label = context.label || '';
+                              let value = context.parsed || 0;
+                              let percentage = value / total * 100;
+                              percentage = parseFloat(percentage.toFixed(2));
+                              return `${label}: ${value} (${percentage}%)`;
+                            }
                           }
                         }
                       }
                     }
                   });
+                  
+               
 
                 // Update Line Chart 2
                 
@@ -661,13 +675,13 @@ document.addEventListener('DOMContentLoaded', function () {
                             title: {
                                 display: true,
                                 text: 'SUM OF Sale Price',
-                                color: '#fff',
+                                color: '#333',
                                 callback: function(value, index, values) {
                                     // Lakukan singkatan nilai di sini
                                     return abbreviateNumber(value);
                                 }
                             },ticks: {
-                                color: '#fff',
+                                color: '#333',
                                 beginAtZero: true,
                                 callback: function(value, index, values) {
                                     // Lakukan singkatan nilai di sini
@@ -678,7 +692,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         x: {
                             beginAtZero: true,
                                 ticks:{
-                                    color:'#fff',
+                                    color:'#333',
                                     beginAtZero: true
 
                                 }

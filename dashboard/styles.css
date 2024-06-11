@@ -3,6 +3,33 @@ body {
   color: #f0f0f0;
   font-family: Arial, sans-serif;
 }
+.dashToHome {
+  position: fixed;
+  top: 20%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Warna hitam dengan transparansi 50% */
+  padding: 10px;
+  border-radius: 0 5px 5px 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashToHome img {
+  width: 30px; /* Lebar logo */
+  height: 30px; /* Tinggi logo */
+}
+
+.dashToHome:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
 .container {
   padding: 20px;
 }
@@ -35,6 +62,10 @@ body {
   margin-right: 10px;
   flex-grow: 1;
 }
+.score-card {
+  background-color: #d8d4d4;
+  color: #2c2b2b;
+}
 .filter select,
 .filter input,
 .filter button {
@@ -42,8 +73,8 @@ body {
   padding: 8px;
   border: none;
   border-radius: 4px;
-  background-color: #2c2c2c;
-  color: #f0f0f0;
+  background-color: #d8d4d4;
+  color: #2c2b2b;
   margin-top: 5px;
 }
 
@@ -103,7 +134,7 @@ body {
   font-size: 24px;
 }
 .chart-container {
-  background-color: #3a3a3a;
+  background-color: #d6d1d1;
   padding: 15px;
   border-radius: 8px;
   margin-top: 20px;
@@ -119,7 +150,7 @@ body {
 }
 
 canvas {
-  background-color: #3a3a3a;
+  background-color: #d6d1d1;
 }
 #salesReport {
   max-width: 100%;
@@ -130,8 +161,8 @@ canvas {
 }
 
 #pie-chart {
-  max-height: 300px;
-  max-width: 500px;
+  max-height: 330px;
+  width: 50%;
 }
 
 .container-2 {
