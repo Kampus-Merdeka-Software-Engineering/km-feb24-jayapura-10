@@ -2,7 +2,39 @@
  * ! Jangan di SENTUH, berani nyentuh script nya tak tampol ntar 
  * 
 */
+ //* mengambil option value dari dataset
+
+ var select = document.getElementById("category");
+
+ // Lakukan request AJAX untuk mengambil dataset JSON
+ var xhr = new XMLHttpRequest();
+ xhr.open("GET", "dataset.json", true);
+ xhr.onreadystatechange = function () {
+   if (xhr.readyState === 4 && xhr.status === 200) {
+     // Parsing JSON
+     var data = JSON.parse(xhr.responseText);
  
+     // Ambil semua nilai kategori BUILDING_CLASS_CATEGORY
+     var buildingCategories = data.map(function(item) {
+       return item.BUILDING_CLASS_CATEGORY;
+     });
+ 
+     // Hapus nilai duplikat
+     buildingCategories = [...new Set(buildingCategories)];
+ 
+     // Tambahkan opsi dari dataset JSON ke elemen select
+     buildingCategories.forEach(function(category) {
+       var option = document.createElement("option");
+       option.text = category;
+       option.value = category;
+       select.appendChild(option);
+     });
+   }
+ };
+ xhr.send();
+
+
+ //*chart
 
 
 document.addEventListener('DOMContentLoaded', function () {
