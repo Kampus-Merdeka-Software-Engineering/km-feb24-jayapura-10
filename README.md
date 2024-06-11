@@ -20,35 +20,42 @@ An open-source of capstone project of team 10 jayapura 24. <br/>
 
 ## Contributor
 
-|          **Name**          |   **Role**    |  **Github**  |
-| :------------------------: | :-----------: | :----------: |
-|   Gilang Wiko Wicaksono    | _Team Leader_ |  Ame0thyst   |
-|   Silvia Putri Anggraeni   |  _Front End_  |  Silviapa30  |
-| Dewangga Putra Fatin Casey |  _Front End_  |  NamakuDewa  |
-|   Rinaldi Mulya Pratama    |  _Front End_  | RinaldiMulya |
-|     Riskamawarni Laia      |  _Front End_  |  riska2003   |
-|      Septi Sekar Arum      | _Deployment_  |   edengumi   |
-|       Fajar Maulana        | _Deployment_  | fajarmlnaaa  |
-|       Lilis Surwangi       | _Pitch Deck_  |   kiyolisa   |
-|     Rr. Putri Nadia N      | _Pitch Deck_  |  nadiapn11   |
-|       Dziahul Fadhil       | _Pitch Deck_  |  Dziaulhaj   |
-|    Ririn Yuliani Putri     | _Pitch Deck_  |   ririnyu    |
-|     Dyah Ayu Pitaloka      | _Pitch Deck_  |   dyahapp    |
-|     Syifa Auliya Zahra     | _Pitch Deck_  |  Syifaaulz   |
+|          **Name**          |      **Role**       |  **Github**  |
+| :------------------------: | :-----------------: | :----------: |
+|   Gilang Wiko Wicaksono    |    _Team Leader_    |  Ame0thyst   |
+|   Silvia Putri Anggraeni   |     _Front End_     |  Silviapa30  |
+| Dewangga Putra Fatin Casey |     _Front End_     |  NamakuDewa  |
+|   Rinaldi Mulya Pratama    |     _Front End_     | RinaldiMulya |
+|     Riskamawarni Laia      |     _Front End_     |  riska2003   |
+|      Septi Sekar Arum      | _Quality Assurance_ |   edengumi   |
+|       Fajar Maulana        |    _Deployment_     | fajarmlnaaa  |
+|       Lilis Surwangi       |    _Pitch Deck_     |   kiyolisa   |
+|     Rr. Putri Nadia N      |    _Pitch Deck_     |  nadiapn11   |
+|       Dziahul Fadhil       |    _Pitch Deck_     |  Dziaulhaj   |
+|    Ririn Yuliani Putri     |    _Pitch Deck_     |   ririnyu    |
+|     Dyah Ayu Pitaloka      |    _Pitch Deck_     |   dyahapp    |
+|     Syifa Auliya Zahra     |    _Pitch Deck_     |  Syifaaulz   |
 
 </div>
 
-## Demo
+## Deployment / Production
 
-Insert gif or link to demo
+| Vercel | [https://km-feb24-jayapura-10-eight.vercel.app/](https://km-feb24-jayapura-10-eight.vercel.app/) |
+| ------ | ------------------------------------------------------------------------------------------------ |
 
-## Features
+## Feature
 
-- lorem ipsum dulu
-- lorem ipsum dulu
+- ![Logo](assets/score.png)
+- Articles
+- Dashboard Data Analyst
+- Interactive and responsive web
 
-## Roadmap
+## Tech
 
-- Additional browser support
+Team 10 uses a number of open source projects to work properly:
 
-- Add more integrations
+- [EmailJs](https://www.emailjs.com/)
+- [Node.js](https://nodejs.org/en)
+- [Figma](https://www.figma.com/)
+- [Canva](https://www.canva.com/)
+- [Spreadsheet](#)
