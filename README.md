@@ -45,9 +45,11 @@ An open-source of capstone project of team 10 jayapura 24. <br/>
 
 ## Feature
 
-- ![Logo](assets/score.png)
+![Logo](assets/score.png)
+
 - Articles
 - Dashboard Data Analyst
+- Feedback
 - Interactive and responsive web
 
 ## Tech
