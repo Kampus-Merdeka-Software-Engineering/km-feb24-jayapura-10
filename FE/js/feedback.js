@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const script = document.createElement('script');
         script.type = 'text/javascript';
         script.src = 'https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js';
-        script.onload = () => emailjs.init({ publicKey: "7HJFP3xUcoiIdz-IA" });
+        script.onload = () => emailjs.init({ publicKey: "JFk9plcnI_oABgDas" });
         document.head.appendChild(script);
     };
 

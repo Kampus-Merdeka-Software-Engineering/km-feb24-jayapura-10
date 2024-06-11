@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         var message = document.getElementById('message-text').value;
 
         // Send email using EmailJS
-        emailjs.send("service_58d0z1h", "template_m1c5p2c", {
+        emailjs.send("service_jpza6ra", "template_yc4299p", {
             from_email: email,
             message: message
         }).then(function (response) {
