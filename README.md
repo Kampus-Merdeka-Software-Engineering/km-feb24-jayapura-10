@@ -41,8 +41,8 @@ An open-source of capstone project of team 10 jayapura 24. <br/>
 ## Deployment / Production
 
 | Vercel 1 | [https://km-feb24-jayapura-10-eight.vercel.app/](https://km-feb24-jayapura-10-eight.vercel.app/) |
-| Vercel 2| [https://km-feb24-jayapura-10.vercel.app/](https://km-feb24-jayapura-10.vercel.app/) |
-| ------ | ------------------------------------------------------------------------------------------------ |
+| -------- | ------------------------------------------------------------------------------------------------ |
+| Vercel 2 | [https://km-feb24-jayapura-10.vercel.app/](https://km-feb24-jayapura-10.vercel.app/)             |
 
 ## Feature
 
